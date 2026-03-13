@@ -3,244 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vexilla - Autonomous AI IT Support | Enterprise & HomeBase</title>
+    <title>TGSOBA | The Great Seal of Black Americans USA | Official Bureau</title>
     <style>
-        /* CORE CSS - VEXILLA BRAND PALETTE */
         :root {
-            --bg-black: #0a0a0a;          /* Deep Black Background */
-            --vexilla-blue: #007bff;      /* Primary Vexilla Blue */
-            --vexilla-cyan: #00f2fe;      /* Accent Cyan (from logo) */
-            --text-main: #e0e0e0;         /* Soft Gray Text (easy on eyes) */
-            --text-muted: #a0a0a0;        /* Disabled/Muted Text */
-            --white: #ffffff;
-            --font-stack: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            --fed-blue: #0A1E3C; /* Official Government Blue */
+            --gold-leaf: #B8860B; /* Authority Gold */
+            --off-white: #F4F4F4;
+            --marble: #FFFFFF;
         }
+        body { margin: 0; font-family: "Times New Roman", serif; background: var(--off-white); color: #333; }
 
-        /* RESET & LAYOUT */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            background-color: var(--bg-black);
-            color: var(--text-main);
-            font-family: var(--font-stack);
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* THE HERO CONTAINER */
-        .vexilla-hero {
-            display: flex;
-            flex-direction: column;
+        /* Header / Presidential Style */
+        .gov-banner { background: #000; color: white; font-size: 11px; padding: 5px 10%; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--gold-leaf); }
+        
+        header { 
+            background: var(--marble); 
+            padding: 20px 10%; 
+            display: flex; 
+            justify-content: space-between; 
             align-items: center;
-            justify-content: center;
-            min-height: 100vh; /* Full screen height */
-            padding: 40px 20px;
-            text-align: center;
-            position: relative;
+            border-bottom: 4px solid var(--fed-blue);
         }
+        .header-seals { display: flex; gap: 20px; align-items: center; }
+        .header-seals img { width: 90px; height: 90px; }
+        .dept-title { text-align: right; }
+        .dept-title h1 { margin: 0; font-size: 24px; color: var(--fed-blue); letter-spacing: 1px; }
+        .dept-title p { margin: 0; font-size: 14px; font-style: italic; color: var(--gold-leaf); }
 
-        /* ABSTRACT BACKGROUND NETWORK EFFECT */
-        .vexilla-hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: 
-                radial-gradient(circle at 20% 30%, rgba(0, 123, 255, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(0, 242, 254, 0.1) 0%, transparent 50%);
-            z-index: 1;
-        }
+        /* Top Navigation Bar */
+        nav { background: var(--fed-blue); padding: 0 10%; display: flex; justify-content: space-between; position: sticky; top: 0; z-index: 1000; }
+        .nav-links { display: flex; }
+        .nav-links a { color: white; padding: 18px 20px; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; border-right: 1px solid rgba(255,255,255,0.1); }
+        .nav-links a:hover { background: var(--gold-leaf); }
+        .auth-buttons { display: flex; align-items: center; }
+        .auth-buttons a { color: var(--gold-leaf); text-decoration: none; font-weight: bold; padding: 0 15px; font-size: 13px; }
 
-        /* LOGO STYLING */
-        .hero-logo {
-            max-width: 280px; /* Adjust based on your image file */
-            height: auto;
-            margin-bottom: 40px;
-            z-index: 10;
-            filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.3)); /* Subtle glow matching logo */
+        /* Monumental Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(10,30,60,0.85), rgba(10,30,60,0.85)), url('capitol-texture.jpg');
+            background-size: cover; padding: 100px 15%; text-align: center; color: white; border-bottom: 5px solid var(--gold-leaf);
         }
+        .hero h2 { font-size: 45px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 800px; margin: 0 auto 30px; line-height: 1.6; font-family: 'Georgia', serif; }
 
-        /* HEADLINE & SUBHEAD */
-        .hero-content {
-            max-width: 850px;
-            z-index: 10;
-            margin-bottom: 60px;
-        }
+        /* Department of Identity Certifications */
+        .cert-grid { padding: 80px 10%; background: var(--marble); display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .cert-card { border: 1px solid #ddd; padding: 20px; text-align: center; transition: 0.3s; background: #fff; }
+        .cert-card:hover { border-color: var(--gold-leaf); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .cert-card h4 { color: var(--fed-blue); margin: 10px 0; font-size: 14px; text-transform: uppercase; }
+        .cert-card .price { font-weight: bold; color: var(--gold-leaf); margin-bottom: 10px; display: block; }
+        .buy-btn { background: var(--fed-blue); color: white; border: none; padding: 8px 15px; cursor: pointer; font-size: 11px; }
 
-        .hero-headline {
-            font-size: 3.5rem; /* Large and authoritative */
-            font-weight: 800;
-            letter-spacing: -1.5px;
-            color: var(--white);
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, var(--white) 60%, var(--vexilla-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        /* Login/Reg Overlay (Placeholder) */
+        .login-panel { background: #eee; padding: 40px; text-align: center; border-radius: 2px; border: 1px solid #ccc; max-width: 400px; margin: 50px auto; }
 
-        .hero-subhead {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            font-weight: 400;
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        /* THE TWO-PATH FORK (ENTERPRISE vs HOME) */
-        .hero-fork {
-            display: flex;
-            gap: 30px;
-            z-index: 10;
-            width: 100%;
-            max-width: 900px;
-            justify-content: center;
-        }
-
-        .fork-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 40px;
-            flex: 1;
-            transition: all 0.3s ease;
-            text-align: left;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .fork-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: var(--vexilla-blue);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
-        }
-
-        .fork-card h3 {
-            font-size: 1.5rem;
-            color: var(--white);
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        .fork-card p {
-            color: var(--text-muted);
-            font-size: 1rem;
-            margin-bottom: 30px;
-            min-height: 48px; /* Keeps buttons aligned */
-        }
-
-        /* BUTTON STYLING */
-        .vexilla-btn {
-            display: inline-block;
-            padding: 12px 28px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            font-size: 1rem;
-            border: 2px solid transparent;
-        }
-
-        /* Primary Button (Enterprise) */
-        .btn-enterprise {
-            background-color: var(--vexilla-blue);
-            color: var(--white);
-        }
-
-        .btn-enterprise:hover {
-            background-color: var(--white);
-            color: var(--bg-black);
-        }
-
-        /* Secondary Button (HomeBase) */
-        .btn-homebase {
-            background-color: transparent;
-            border-color: rgba(255, 255, 255, 0.3);
-            color: var(--white);
-        }
-
-        .btn-homebase:hover {
-            border-color: var(--vexilla-cyan);
-            color: var(--vexilla-cyan);
-            box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
-        }
-
-        /* LIVE NETWORK STATUS INDICATOR (FUTURISTIC TOUCH) */
-        .network-status {
-            position: absolute;
-            bottom: 30px;
-            left: 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            z-index: 10;
-        }
-
-        .status-dot {
-            width: 10px;
-            height: 10px;
-            background-color: #28a745; /* Green for healthy */
-            border-radius: 50%;
-            box-shadow: 0 0 10px #28a745;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.2); opacity: 0.7; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        /* MOBILE RESPONSIVENESS */
-        @media (max-width: 768px) {
-            .hero-headline { font-size: 2.5rem; }
-            .hero-fork { flex-direction: column; gap: 20px; }
-            .fork-card { padding: 30px; }
-            .hero-logo { max-width: 220px; }
-            .network-status { position: static; margin-top: 40px; }
-        }
+        /* Footer */
+        footer { background: #111; color: #ccc; padding: 60px 10%; display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 40px; font-size: 13px; }
+        .footer-seals img { width: 120px; margin-bottom: 20px; opacity: 0.8; }
+        .footer-links ul { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 10px; }
+        .footer-links a { color: #888; text-decoration: none; }
+        .footer-links a:hover { color: var(--gold-leaf); }
     </style>
 </head>
 <body>
 
-    <section class="vexilla-hero">
-        
-        <img src="logo-black.png" alt="Vexilla Autonomous AI IT Support Logo" class="hero-logo">
+    <div class="gov-banner">An Official Identity Foundation of the United States of America • TGSOBAUSA.ORG</div>
 
-        <div class="hero-content">
-            <h1 class="hero-headline">The World’s First Self-Healing IT Infrastructure.</h1>
-            <p class="hero-subhead">
-                Vexilla is the proactive AI agent that predicts, diagnoses, and fixes Windows and macOS issues before you even notice them. Available for Enterprise Networks and HomeBase users.
-            </p>
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Great Seal Logo 1">
+            <img src="Tgsobabpousa2.png" alt="Great Seal Logo 2">
         </div>
-
-        <div class="hero-fork">
-            
-            <div class="fork-card">
-                <h3>Vexilla Enterprise</h3>
-                <p>Autonomous Site Reliability Engineering for corporate networks. Zero-click resolution, predictive hardware alerts, and immutable audit logs.</p>
-                <a href="#enterprise-pricing" class="vexilla-btn btn-enterprise">Secure My Business</a>
-            </div>
-
-            <div class="fork-card">
-                <h3>Vexilla HomeBase</h3>
-                <p>Your "Digital Handyman" for home users and families. Jargon-free diagnostics and one-click PC/Mac optimization.</p>
-                <a href="#homebase-signup" class="vexilla-btn btn-homebase">Protect My Home</a>
-            </div>
-
+        <div class="dept-title">
+            <h1>THIN BLACK & BROWN LINES USA</h1>
+            <p>Bureau of National Identity & Community Architecture</p>
         </div>
+    </header>
 
-        <div class="network-status">
-            <div class="status-dot"></div>
-            <span>Vexilla Core AI: <span style="color:var(--white);">Operational</span></span>
+    <nav>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Bureau of Records</a>
+            <a href="#">Government Contracts</a>
+            <a href="#">Grant Initiatives</a>
+            <a href="#">Civic Engagement</a>
+            <a href="#">Village Infrastructure</a>
         </div>
+        <div class="auth-buttons">
+            <a href="#">LOGIN</a>
+            <a href="#" style="border: 1px solid var(--gold-leaf); padding: 5px 15px; border-radius: 3px;">REGISTER</a>
+        </div>
+    </nav>
 
+    <section class="hero">
+        <h2>A Monumental Identity for a Resilient Nation</h2>
+        <p>
+            TBBLUSA.org, in association with TGSOBAUSA.ORG, proudly presents the first official documentation of the Black and Brown people of the United States. We serve as the primary architects of a new national narrative—one rooted in positivity, shared prosperity, and the unwavering defense of our community's identity.
+        </p>
+        <button style="padding: 15px 40px; background: var(--gold-leaf); color: white; border: none; font-weight: bold; cursor: pointer;">VIEW GOVERNMENT CONTRACTING PORTFOLIO</button>
     </section>
+
+    <section style="text-align:center; padding: 50px 0;">
+        <h3 style="text-transform: uppercase; letter-spacing: 2px;">Proprietary Digital Identity & Certifications</h3>
+        <p style="color: #666;">Official Verifications of Status, Heritage, and Civic Contribution</p>
+    </section>
+
+    <div class="cert-grid">
+        <div class="cert-card">
+            <h4>Pillar Status Certification</h4>
+            <span class="price">$49.99</span>
+            <button class="buy-btn">APPLY FOR VERIFICATION</button>
+        </div>
+        <div class="cert-card">
+            <h4>Ancestral Lineage Seal</h4>
+            <span class="price">$75.00</span>
+            <button class="buy-btn">VERIFY IDENTITY</button>
+        </div>
+        <div class="cert-card">
+            <h4>Economic Sovereign Badge</h4>
+            <span class="price">$120.00</span>
+            <button class="buy-btn">GET CERTIFIED</button>
+        </div>
+        <div class="cert-card">
+            <h4>Civic Leader Registry</h4>
+            <span class="price">$150.00</span>
+            <button class="buy-btn">REGISTER NOW</button>
+        </div>
+        <div class="cert-card">
+            <h4>Community Guardian License</h4>
+            <span class="price">$200.00</span>
+            <button class="buy-btn">ENROLL</button>
+        </div>
+        </div>
+
+    
+
+    <section style="padding: 100px 10%; background: var(--fed-blue); color: white; text-align: center;">
+        <h2>Government Partnership & Funding</h2>
+        <p style="max-width: 900px; margin: 0 auto;">
+            Our department for Federal and State Contracts is ready to collaborate. We provide a solution-based dynamic that fulfills the mission of 20+ major government grant initiatives. From Minneapolis to Philadelphia, we are the helping hand that transforms community engagement into measurable national progress.
+        </p>
+    </section>
+
+    <footer>
+        <div>
+            <div class="footer-seals">
+                <img src="Tgsobabpousa1.png" alt="Great Seal 1">
+                <img src="Tgsobabpousa2.png" alt="Great Seal 2">
+            </div>
+            <p>© 2026 TBBLUSA.ORG Nonprofit Corporation. Licensed & Copyrighted Identity.</p>
+        </div>
+        <div class="footer-links">
+            <h4 style="color: var(--gold-leaf);">BUREAU DIRECTORY</h4>
+            <ul style="column-count: 2;">
+                <li><a href="#">Contact Government Office</a></li>
+                <li><a href="#">Public Records Access</a></li>
+                <li><a href="#">Grant Funding Dashboard</a></li>
+                <li><a href="#">Legal & Copyright Affairs</a></li>
+                <li><a href="#">Corporate Associations</a></li>
+                <li><a href="#">Youth Club Registration</a></li>
+                <li><a href="#">Economic Opportunity Hub</a></li>
+                <li><a href="#">Voting Initiative Program</a></li>
+                <li><a href="#">Historical Accountability</a></li>
+                <li><a href="#">Community Safe-Zones</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="color: var(--gold-leaf);">IDENTITY TIER ACCESS</h4>
+            <p>Access your digital products, certifications, and verification status via the Federal Login Portal.</p>
+            <a href="#" style="color: white; font-weight: bold;">SECURE LOGIN →</a>
+        </div>
+    </footer>
 
 </body>
 </html>
