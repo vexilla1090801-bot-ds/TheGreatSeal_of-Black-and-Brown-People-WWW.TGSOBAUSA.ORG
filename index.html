@@ -5,82 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TGSOBA | The Great Seal of Black Americans USA | Official Bureau</title>
     <style>
-        :root {
-            --fed-blue: #0A1E3C; /* Official Government Blue */
-            --gold-leaf: #B8860B; /* Authority Gold */
-            --off-white: #F4F4F4;
-            --marble: #FFFFFF;
-        }
-        body { margin: 0; font-family: "Times New Roman", serif; background: var(--off-white); color: #333; }
+    /* Updated Branding Logic */
+    header { 
+        background: var(--marble); 
+        padding: 30px 10%; /* Increased padding for the larger logos */
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        border-bottom: 5px solid var(--fed-blue);
+    }
 
-        /* Header / Presidential Style */
-        .gov-banner { background: #000; color: white; font-size: 11px; padding: 5px 10%; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--gold-leaf); }
-        
-        header { 
-            background: var(--marble); 
-            padding: 20px 10%; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            border-bottom: 4px solid var(--fed-blue);
-        }
-        .header-seals { display: flex; gap: 20px; align-items: center; }
-        .header-seals img { width: 90px; height: 90px; }
-        .dept-title { text-align: right; }
-        .dept-title h1 { margin: 0; font-size: 24px; color: var(--fed-blue); letter-spacing: 1px; }
-        .dept-title p { margin: 0; font-size: 14px; font-style: italic; color: var(--gold-leaf); }
+    .header-seals { 
+        display: flex; 
+        gap: 40px; /* Increased gap for larger presence */
+        align-items: center; 
+    }
 
-        /* Top Navigation Bar */
-        nav { background: var(--fed-blue); padding: 0 10%; display: flex; justify-content: space-between; position: sticky; top: 0; z-index: 1000; }
-        .nav-links { display: flex; }
-        .nav-links a { color: white; padding: 18px 20px; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; border-right: 1px solid rgba(255,255,255,0.1); }
-        .nav-links a:hover { background: var(--gold-leaf); }
-        .auth-buttons { display: flex; align-items: center; }
-        .auth-buttons a { color: var(--gold-leaf); text-decoration: none; font-weight: bold; padding: 0 15px; font-size: 13px; }
+    /* Forcing Identical Circle Proportions */
+    .header-seals img { 
+        width: 250px; /* 3x larger than previous 80px-90px */
+        height: 250px; 
+        object-fit: contain; 
+        border-radius: 50%; /* Ensures perfect circular containment */
+        background: transparent;
+        /* Optional: Subtle gold rim to tie the two logos together */
+        border: 2px solid var(--gold-leaf);
+        padding: 5px;
+    }
 
-        /* Monumental Hero Section */
-        .hero { 
-            background: linear-gradient(rgba(10,30,60,0.85), rgba(10,30,60,0.85)), url('capitol-texture.jpg');
-            background-size: cover; padding: 100px 15%; text-align: center; color: white; border-bottom: 5px solid var(--gold-leaf);
-        }
-        .hero h2 { font-size: 45px; margin-bottom: 20px; }
-        .hero p { font-size: 18px; max-width: 800px; margin: 0 auto 30px; line-height: 1.6; font-family: 'Georgia', serif; }
+    .dept-title { 
+        text-align: right; 
+        max-width: 500px;
+    }
 
-        /* Department of Identity Certifications */
-        .cert-grid { padding: 80px 10%; background: var(--marble); display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        .cert-card { border: 1px solid #ddd; padding: 20px; text-align: center; transition: 0.3s; background: #fff; }
-        .cert-card:hover { border-color: var(--gold-leaf); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .cert-card h4 { color: var(--fed-blue); margin: 10px 0; font-size: 14px; text-transform: uppercase; }
-        .cert-card .price { font-weight: bold; color: var(--gold-leaf); margin-bottom: 10px; display: block; }
-        .buy-btn { background: var(--fed-blue); color: white; border: none; padding: 8px 15px; cursor: pointer; font-size: 11px; }
+    .dept-title h1 { 
+        margin: 0; 
+        font-size: 32px; /* Scaled text to match larger logos */
+        color: var(--fed-blue); 
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
 
-        /* Login/Reg Overlay (Placeholder) */
-        .login-panel { background: #eee; padding: 40px; text-align: center; border-radius: 2px; border: 1px solid #ccc; max-width: 400px; margin: 50px auto; }
+    .dept-title p { 
+        margin: 5px 0 0 0; 
+        font-size: 18px; 
+        font-style: italic; 
+        color: var(--gold-leaf); 
+    }
+</style>
 
-        /* Footer */
-        footer { background: #111; color: #ccc; padding: 60px 10%; display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 40px; font-size: 13px; }
-        .footer-seals img { width: 120px; margin-bottom: 20px; opacity: 0.8; }
-        .footer-links ul { list-style: none; padding: 0; }
-        .footer-links li { margin-bottom: 10px; }
-        .footer-links a { color: #888; text-decoration: none; }
-        .footer-links a:hover { color: var(--gold-leaf); }
-    </style>
-</head>
-<body>
-
-    <div class="gov-banner">An Official Identity Foundation of the United States of America • TGSOBAUSA.ORG</div>
-
-    <header>
-        <div class="header-seals">
-            <img src="Tgsobabpousa1.png" alt="Great Seal Logo 1">
-            <img src="Tgsobabpousa2.png" alt="Great Seal Logo 2">
-        </div>
-        <div class="dept-title">
-            <h1>THIN BLACK & BROWN LINES USA</h1>
-            <p>Bureau of National Identity & Community Architecture</p>
-        </div>
-    </header>
-
+<header>
+    <div class="header-seals">
+        <img src="Tgsobabpousa1.png" alt="The Great Seal of Black Americans - 1">
+        <img src="Tgsobabpousa2.png" alt="The Great Seal of Black Americans - 2">
+    </div>
+    <div class="dept-title">
+        <h1>Thin Black & Brown Lines USA</h1>
+        <p>Bureau of National Identity & Sovereign Records</p>
+    </div>
+</header>
     <nav>
         <div class="nav-links">
             <a href="#">Home</a>
