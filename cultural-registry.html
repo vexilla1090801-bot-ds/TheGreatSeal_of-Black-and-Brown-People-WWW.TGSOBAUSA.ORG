@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Heritage Registry | TGSOBAUSA.ORG Arts</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --onyx: #121212; --clay: #D2691E; }
+        body { margin: 0; font-family: "Georgia", serif; background: var(--onyx); color: #e0e0e0; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--clay);
+        }
+        .header-seals img { width: 100px; height: 100px; }
+
+        .arts-hero { 
+            padding: 80px 8%; text-align: center; background: linear-gradient(rgba(18,18,18,0.8), rgba(18,18,18,0.8)), url('arts-texture.jpg');
+            border-bottom: 1px solid var(--gold-leaf);
+        }
+
+        .registry-grid { 
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; 
+            max-width: 1200px; margin: 50px auto; padding: 0 20px; 
+        }
+        .art-card { 
+            background: #1a1a1a; border: 1px solid #333; padding: 0; overflow: hidden;
+            transition: 0.3s;
+        }
+        .art-card:hover { border-color: var(--gold-leaf); transform: translateY(-5px); }
+        .art-info { padding: 20px; }
+        .art-info h3 { color: var(--gold-leaf); margin: 0; font-size: 18px; }
+        .art-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--clay); }
+
+        .vault-section { 
+            background: white; color: var(--fed-blue); padding: 60px 8%; margin-top: 40px;
+        }
+        .btn-register { 
+            background: var(--fed-blue); color: white; border: none; padding: 18px 45px; 
+            font-weight: bold; cursor: pointer; border-radius: 4px; font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right; color: var(--fed-blue);">
+            <h1 style="font-size: 22px; margin: 0;">CULTURAL HERITAGE REGISTRY</h1>
+            <p style="font-size: 11px; color: var(--clay); margin: 0;">Protecting the Intellectual Property of the Diaspora</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="arts-hero">
+            <h2 style="font-size: 42px; color: var(--gold-leaf); margin: 0; letter-spacing: 3px;">CULTURE IS SOVEREIGNTY</h2>
+            <p style="max-width: 800px; margin: 20px auto; font-size: 18px; line-height: 1.6; opacity: 0.9;">
+                The Bureau provides a secure repository for the registration of artistic works, ensuring that community creators retain full ownership and protection against unauthorized exploitation.
+            </p>
+        </section>
+
+        <div class="registry-grid">
+            <div class="art-card">
+                <div style="height:200px; background:#222; display:flex; align-items:center; justify-content:center; font-size:40px;">🎵</div>
+                <div class="art-info">
+                    <span class="art-tag">Sound Recording</span>
+                    <h3>The Philly Suite v.1</h3>
+                    <p style="font-size: 12px; color: #888;">Registered by: Marcus R. (Pillar ID: 4402)</p>
+                </div>
+            </div>
+            <div class="art-card">
+                <div style="height:200px; background:#222; display:flex; align-items:center; justify-content:center; font-size:40px;">🎨</div>
+                <div class="art-info">
+                    <span class="art-tag">Visual Art</span>
+                    <h3>The Great Seal Mural</h3>
+                    <p style="font-size: 12px; color: #888;">Registered by: Elena S. (Pillar ID: 1092)</p>
+                </div>
+            </div>
+            <div class="art-card">
+                <div style="height:200px; background:#222; display:flex; align-items:center; justify-content:center; font-size:40px;">📖</div>
+                <div class="art-info">
+                    <span class="art-tag">Literary Work</span>
+                    <h3>Sovereign Manifesto</h3>
+                    <p style="font-size: 12px; color: #888;">Registered by: David K. (Pillar ID: 0021)</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <section class="vault-section">
+            <div style="max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 50px;">
+                <div style="flex: 1;">
+                    <h2 style="font-size: 32px;">The Sovereign IP Shield</h2>
+                    <p style="font-size: 18px; line-height: 1.6;">
+                        By registering your work with the Bureau, you receive a timestamped <strong>Sovereign Copyright Certificate</strong>. This document acts as a "Public Notice" of ownership, backed by the Bureau's legal division and the <strong>Association of Success</strong>.
+                    </p>
+                    <button class="btn-register">START REGISTRATION</button>
+                </div>
+                <div style="flex: 1; background: #eee; height: 300px; border-radius: 15px; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; color: #999;">
+                    Drop Files Here to Secure (Beta)
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #000; color: #555; padding: 60px 8%; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | ARTS & HERITAGE DIVISION</p>
+        <p style="font-size: 11px; opacity: 0.5;">Securing the creative future of Philadelphia and Minneapolis.</p>
+    </footer>
+
+</body>
+</html>
