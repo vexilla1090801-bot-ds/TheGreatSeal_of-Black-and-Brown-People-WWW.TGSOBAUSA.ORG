@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Library | TGSOBAUSA.ORG Archives</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --mahogany: #4E1A1A; --gold-leaf: #B8860B; --parchment: #F4EBD0; }
+        body { margin: 0; font-family: 'Georgia', serif; background: var(--parchment); color: #2C2C2C; }
+        
+        header { 
+            background: #fff; padding: 25px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 3px solid var(--mahogany);
+        }
+        .header-seals img { width: 70px; }
+
+        .archive-hero { 
+            text-align: center; padding: 80px 8%; background: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .collection-grid { 
+            max-width: 1200px; margin: 40px auto; display: grid; 
+            grid-template-columns: repeat(3, 1fr); gap: 30px; padding: 0 20px;
+        }
+        .collection-card { 
+            background: white; border: 1px solid #C5B358; padding: 25px; 
+            box-shadow: 5px 5px 0px var(--mahogany); transition: 0.2s;
+        }
+        .collection-card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0px var(--gold-leaf); }
+
+        .digital-vault { 
+            background: var(--fed-blue); color: white; padding: 60px 8%;
+        }
+
+        .btn-search { 
+            background: var(--mahogany); color: white; border: none; padding: 15px 40px; 
+            font-family: inherit; font-variant: small-caps; font-weight: bold; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal 1"></div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 22px; color: var(--mahogany); margin: 0;">NATIONAL ARCHIVE & LIBRARY</h1>
+            <p style="font-size: 10px; color: var(--fed-blue); margin: 0;">Preserving the Eternal Record of Success</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="archive-hero">
+            <h2 style="font-size: 38px; color: var(--mahogany); margin-bottom: 20px;">KNOWLEDGE IS THE ONLY PERMANENT CAPITAL</h2>
+            <div style="width: 100px; height: 2px; background: var(--gold-leaf); margin: 0 auto 30px;"></div>
+            <p style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-style: italic;">
+                The Sovereign Library houses over 500,000 digitized volumes, ancestral records, and the complete legislative history of the Association of Success.
+            </p>
+        </section>
+
+        
+
+        <div class="collection-grid">
+            <div class="collection-card">
+                <h3 style="color: var(--mahogany);">Genealogy & Lineage</h3>
+                <p style="font-size: 14px;">The "Roots Project": An immutable record of our families' histories and connections across the diaspora.</p>
+            </div>
+            <div class="collection-card">
+                <h3 style="color: var(--mahogany);">The Sovereign Law</h3>
+                <p style="font-size: 14px;">Complete records of all Bureau protocols, Merchant treaties, and Citizen rights documents.</p>
+            </div>
+            <div class="collection-card">
+                <h3 style="color: var(--mahogany);">Technical Scrolls</h3>
+                <p style="font-size: 14px;">The blueprints for every Pillar House, hydroponic system, and Bureau technology ever developed.</p>
+            </div>
+        </div>
+
+        <section class="digital-vault">
+            <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div>
+                    <h2 style="color: var(--gold-leaf);">The Obsidian Vault</h2>
+                    <p style="opacity: 0.9; line-height: 1.7;">
+                        Every piece of data in the Library is backed up on decentralized "cold storage" nodes. This ensures that even in the event of a global network failure, our history remains intact and accessible to the next generation.
+                    </p>
+                    
+                    
+                    
+                    <button class="btn-search" style="margin-top: 20px;">Access Digital Stacks</button>
+                </div>
+                <div style="border: 2px solid var(--gold-leaf); padding: 10px;">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #111; color: #777; padding: 40px; text-align: center; border-top: 5px solid var(--gold-leaf);">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | OFFICE OF HISTORICAL RECORDS</p>
+        <p style="font-size: 10px; text-transform: uppercase;">A people without a record are a people without a future.</p>
+    </footer>
+
+</body>
+</html>
