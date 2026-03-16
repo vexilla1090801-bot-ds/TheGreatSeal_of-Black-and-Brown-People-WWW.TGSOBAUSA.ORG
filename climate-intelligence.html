@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Intelligence | TGSOBAUSA.ORG Meteorology</title>
+    <style>
+        :root { --strato-blue: #1E3799; --baro-teal: #00D2D3; --cloud: #F1F2F6; --fed-blue: #0A1E3C; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--cloud); color: var(--fed-blue); }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--baro-teal);
+        }
+        .header-seals img { width: 60px; }
+
+        .weather-hero { 
+            background: linear-gradient(to bottom, var(--strato-blue), var(--fed-blue)); 
+            color: white; padding: 80px 8%; text-align: left; position: relative; overflow: hidden;
+        }
+
+        .data-strip { 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); 
+            padding: 15px 8%; display: flex; justify-content: space-around; font-size: 14px;
+        }
+
+        .intelligence-grid { 
+            max-width: 1200px; margin: 40px auto; display: grid; 
+            grid-template-columns: 1.5fr 1fr; gap: 30px; padding: 0 20px;
+        }
+
+        .report-card { 
+            background: white; border: 1px solid #ddd; padding: 30px; border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .sensor-node { 
+            display: flex; align-items: center; gap: 15px; margin-bottom: 20px; 
+            padding: 15px; background: #f8f9fa; border-radius: 4px;
+        }
+
+        .btn-alert { 
+            background: var(--baro-teal); color: var(--fed-blue); border: none; padding: 15px 30px; 
+            font-weight: bold; cursor: pointer; text-transform: uppercase; border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal 1"></div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 18px; color: var(--fed-blue); margin: 0;">METEOROLOGICAL OFFICE</h1>
+            <p style="font-size: 10px; color: var(--baro-teal); margin: 0;">Atmospheric Intelligence for a Sovereign Future</p>
+        </div>
+    </header>
+
+    <div class="data-strip">
+        <span>🌡️ District Temp: 72°F</span>
+        <span>🌬️ Wind: 8mph NW</span>
+        <span>💧 Humidity: 44%</span>
+        <span>☀️ UV Index: 4 (Moderate)</span>
+    </div>
+
+    <main>
+        <section class="weather-hero">
+            <h2 style="font-size: 42px; margin: 0;">PRECISION OVER PROBABILITY.</h2>
+            <p style="max-width: 600px; margin-top: 20px; font-size: 18px; opacity: 0.9;">
+                The Bureau operates its own Doppler-Lite radar and sensor array. We provide micro-climate data that allows our citizens to prepare and our farms to prosper.
+            </p>
+        </section>
+
+        
+
+        <div class="intelligence-grid">
+            <div class="report-card">
+                <h3 style="color: var(--strato-blue);">Agricultural Optimization</h3>
+                <p style="line-height: 1.8; color: #57606f;">
+                    Our data feeds directly into the **Sovereign Farms** (Page 34) AI. By predicting rainfall patterns with 98% accuracy within our districts, we save millions of gallons of water annually and ensure our crops receive the perfect balance of light and hydration.
+                </p>
+                
+                
+                
+                <div class="sensor-node">
+                    <div><strong>AQI Monitor:</strong> 12 (Excellent) - Air quality in the Philly Hub is 3x better than the city average.</div>
+                </div>
+            </div>
+
+            <div style="background: var(--fed-blue); color: white; padding: 40px; border-radius: 8px;">
+                <h4 style="margin-top: 0; color: var(--baro-teal);">Climate Resilience Hub</h4>
+                <p style="font-size: 13px; opacity: 0.8;">Integrated with **Emergency Comms** (Page 86) for real-time storm tracking.</p>
+                
+                
+                
+                <button class="btn-alert" style="width: 100%; margin-top: 20px;">Subscribe to Weather Alerts</button>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer style="background: var(--fed-blue); color: #ced6e0; padding: 40px; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | CLIMATE INTELLIGENCE DIVISION</p>
+    </footer>
+
+</body>
+</html>
