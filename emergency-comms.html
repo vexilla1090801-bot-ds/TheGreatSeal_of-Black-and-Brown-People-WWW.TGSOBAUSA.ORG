@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Comms | TGSOBAUSA.ORG Signal</title>
+    <style>
+        :root { --signal-red: #C0392B; --radio-white: #ECF0F1; --shadow-black: #121212; --led-green: #2ECC71; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--shadow-black); color: var(--radio-white); }
+        
+        header { 
+            background: #000; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 3px solid var(--signal-red);
+        }
+        .header-seals img { width: 50px; filter: grayscale(1) brightness(2); }
+
+        .signal-hero { 
+            padding: 80px 8%; background: repeating-linear-gradient(0deg, #121212, #121212 2px, #1a1a1a 2px, #1a1a1a 4px);
+            border-bottom: 1px solid #333;
+        }
+
+        .frequency-grid { 
+            max-width: 1200px; margin: 40px auto; display: grid; 
+            grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px;
+        }
+        .band-card { 
+            background: #1c1c1c; border: 1px solid #333; padding: 25px; border-radius: 4px;
+            position: relative;
+        }
+        .band-card::before { content: "• SIGNAL ACTIVE"; color: var(--led-green); font-size: 10px; font-weight: bold; position: absolute; top: 10px; right: 10px; }
+        .band-card h4 { color: var(--signal-red); margin: 0; font-size: 12px; letter-spacing: 1px; }
+
+        .comms-tech { 
+            max-width: 1200px; margin: 60px auto; display: grid; 
+            grid-template-columns: 1fr 1fr; gap: 60px; padding: 0 20px; align-items: center;
+        }
+
+        .btn-checkin { 
+            background: var(--signal-red); color: white; border: none; padding: 15px 35px; 
+            font-weight: bold; cursor: pointer; text-transform: uppercase; border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal 1"></div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 18px; color: var(--signal-red); margin: 0;">EMERGENCY COMMS DIVISION</h1>
+            <p style="font-size: 10px; color: #888; margin: 0;">The Voice of the Nation in the Dark</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="signal-hero">
+            <h2 style="font-size: 42px; margin: 0; color: var(--radio-white);">WE NEVER GO SILENT.</h2>
+            <p style="max-width: 650px; margin-top: 20px; font-size: 18px; opacity: 0.8; line-height: 1.6;">
+                The Bureau maintains an independent radio infrastructure. In times of crisis, the "Association Frequency" becomes the primary source of truth, safety instructions, and resource coordination.
+            </p>
+        </section>
+
+        
+
+        <div class="frequency-grid">
+            <div class="band-card"><h4>HF / SHORTWAVE</h4><div style="font-size: 20px; margin-top: 10px;">Inter-Hub Link</div></div>
+            <div class="band-card"><h4>VHF / UHF</h4><div style="font-size: 20px; margin-top: 10px;">District Patrol</div></div>
+            <div class="band-card"><h4>S-BAND</h4><div style="font-size: 20px; margin-top: 10px;">Sovereign Space Link</div></div>
+        </div>
+
+        <div class="comms-tech">
+            <div>
+                <h3 style="color: var(--signal-red); font-size: 28px;">The Citizen Beacon Protocol</h3>
+                <p style="line-height: 1.8; color: #BBB;">
+                    Every home in the **Pillar District** is equipped with a solar-powered, long-range (LoRa) radio beacon. These devices automatically mesh together to create a text-based communication network that requires no internet. It allows the **Emergency Response Unit** (Page 71) to locate and assist every family instantly.
+                </p>
+                
+                
+
+                <ul style="list-style: none; padding: 0; color: #fff; font-size: 14px; margin-top: 30px;">
+                    <li style="margin-bottom: 10px;">📻 **Off-Grid Audio:** 24/7 Bureau news and weather.</li>
+                    <li style="margin-bottom: 10px;">📡 **Encrypted Paging:** Secure alerts for Bureau Officials.</li>
+                    <li style="margin-bottom: 10px;">🔋 **Kinetic Power:** Backup manual charging for all devices.</li>
+                </ul>
+            </div>
+            <div style="background: #111; padding: 40px; border: 1px solid #333;">
+                <h4 style="margin-top: 0; color: var(--signal-red);">Broadcast Schedule</h4>
+                <p style="font-size: 13px; color: #888;">The **Bureau Media Group** (Page 78) broadcasts on 7.255 MHz every hour.</p>
+                
+                
+                
+                <button class="btn-checkin" style="width: 100%; margin-top: 20px;">Register My Radio ID</button>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #000; color: #444; padding: 40px; text-align: center; border-top: 1px solid #222;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | COMMUNICATIONS AUTHORITY</p>
+    </footer>
+
+</body>
+</html>
