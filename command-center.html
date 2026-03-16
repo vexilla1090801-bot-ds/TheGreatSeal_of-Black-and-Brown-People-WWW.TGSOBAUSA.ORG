@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Command | TGSOBAUSA.ORG Executive</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --alert-red: #C0392B; --terminal-bg: #050a14; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--terminal-bg); color: #fff; overflow-x: hidden; }
+        
+        header { 
+            background: #fff; padding: 10px 5%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 3px solid var(--gold-leaf);
+        }
+        .header-seals img { width: 50px; height: 50px; }
+
+        .dashboard-grid { 
+            display: grid; grid-template-columns: 250px 1fr 300px; gap: 20px; 
+            padding: 20px; height: calc(100vh - 100px);
+        }
+
+        .sidebar { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; border: 1px solid #1a2a44; }
+        .sidebar h3 { font-size: 12px; color: var(--gold-leaf); text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link { display: block; color: #aaa; text-decoration: none; padding: 10px 0; font-size: 13px; border-bottom: 1px solid #1a2a44; }
+        .nav-link:hover { color: #fff; }
+
+        .main-monitor { display: flex; flex-direction: column; gap: 20px; }
+        .map-frame { flex: 2; background: #000; border: 1px solid var(--fed-blue); border-radius: 8px; position: relative; }
+        .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .quick-stat { background: #111b2d; padding: 15px; border-top: 3px solid var(--gold-leaf); text-align: center; }
+
+        .notifications { background: #0a0f1d; padding: 20px; border-radius: 8px; border: 1px solid #1a2a44; overflow-y: auto; }
+        .alert-item { font-size: 12px; padding: 10px; border-bottom: 1px solid #1a2a44; margin-bottom: 5px; }
+        .alert-tag { color: var(--alert-red); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal"></div>
+        <div style="text-align: center; color: var(--fed-blue);">
+            <h2 style="margin:0; font-size: 16px;">BUREAU MASTER COMMAND & CONTROL</h2>
+            <p style="margin:0; font-size: 10px; font-weight: bold;">DIRECTORATE LEVEL ACCESS ONLY</p>
+        </div>
+        <div style="color: var(--fed-blue); font-weight: bold;">SYS-ID: 2026-ALPHA</div>
+    </header>
+
+    <main class="dashboard-grid">
+        <aside class="sidebar">
+            <h3>Infrastructure</h3>
+            <a href="logistics.html" class="nav-link">Logistics & Fleet</a>
+            <a href="energy.html" class="nav-link">Energy Micro-grids</a>
+            <a href="housing.html" class="nav-link">Land Trust Registry</a>
+            <br>
+            <h3>Security</h3>
+            <a href="cyber-defense.html" class="nav-link">Data Shield Status</a>
+            <a href="judiciary.html" class="nav-link">Community Court</a>
+            <a href="security-protocols.html" class="nav-link">Pillar Security</a>
+        </aside>
+
+        <section class="main-monitor">
+            <div class="stat-row">
+                <div class="quick-stat"><small>Fund Balance</small><div style="font-size: 18px; color: #2ecc71;">$4.2M</div></div>
+                <div class="quick-stat"><small>Active Citizens</small><div style="font-size: 18px;">12,842</div></div>
+                <div class="quick-stat"><small>Safety Index</small><div style="font-size: 18px; color: var(--gold-leaf);">94%</div></div>
+                <div class="quick-stat"><small>Emergency Ready</small><div style="font-size: 18px;">CRITICAL-A</div></div>
+            </div>
+
+            <div class="map-frame">
+                <div style="padding: 20px; color: var(--gold-leaf); font-size: 12px;">ACTIVE CORRIDOR: PHILLY -> MINNEAPOLIS</div>
+                
+            </div>
+        </section>
+
+        <aside class="notifications">
+            <h3 style="font-size: 12px; color: var(--alert-red);">LIVE OPERATIONS FEED</h3>
+            <div class="alert-item"><span class="alert-tag">[LOGISTICS]</span> Unit 04 arrived at Philly Hub 01.</div>
+            <div class="alert-item"><span class="alert-tag">[SECURITY]</span> Digital perimeter scan complete. No breaches.</div>
+            <div class="alert-item"><span class="alert-tag">[ENERGY]</span> Minneapolis Solar Array at 98% efficiency.</div>
+            <div class="alert-item"><span class="alert-tag">[CENSUS]</span> 14 new Sovereigns registered in District 4.</div>
+            
+            
+        </aside>
+    </main>
+
+    <footer style="background: #000; padding: 10px; text-align: center; color: #444; font-size: 9px;">
+        PROPRIETARY SYSTEM OF THE ASSOCIATION OF SUCCESS | ENCRYPTED BY BUREAU CYBER-DEFENSE
+    </footer>
+
+</body>
+</html>
