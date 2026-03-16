@@ -3,47 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bureau Procurement | TGSOBAUSA.ORG Vendor Portal</title>
+    <title>Procurement Portal | TGSOBAUSA.ORG Bidding</title>
     <style>
-        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --steel: #4A4A4A; }
-        body { margin: 0; font-family: "Georgia", serif; background: #f4f4f4; color: #333; }
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --slate: #2c3e50; --success: #27ae60; }
+        body { margin: 0; font-family: "Inter", sans-serif; background: #f8f9fa; color: #333; }
         
         header { 
             background: #fff; padding: 20px 8%; display: flex; 
-            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--gold-leaf);
+            justify-content: space-between; align-items: center; border-bottom: 4px solid var(--fed-blue);
         }
-        .header-seals img { width: 100px; height: 100px; }
+        .header-seals img { width: 80px; height: 80px; }
 
         .procurement-hero { 
-            background: var(--fed-blue); color: white; padding: 60px 8%; 
+            background: var(--fed-blue); color: white; padding: 60px 8%;
         }
 
-        .vendor-grid { 
-            display: grid; grid-template-columns: 1fr 1fr; gap: 30px; 
-            max-width: 1100px; margin: 50px auto; padding: 0 20px; 
-        }
-        .vendor-card { 
-            background: white; border: 1px solid #ddd; padding: 30px; 
-            position: relative; border-top: 5px solid var(--steel);
-        }
-        .vendor-card h3 { color: var(--fed-blue); margin-top: 0; text-transform: uppercase; }
+        .portal-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
         
-        .bid-status { 
-            display: inline-block; background: #e8f5e9; color: #2e7d32; 
-            padding: 5px 12px; font-size: 11px; font-weight: bold; margin-bottom: 15px; 
+        .bidding-table { 
+            width: 100%; border-collapse: collapse; background: white; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 8px; overflow: hidden;
         }
+        .bidding-table th { background: var(--slate); color: white; padding: 15px; text-align: left; font-size: 13px; }
+        .bidding-table td { padding: 15px; border-bottom: 1px solid #eee; font-size: 14px; }
+        
+        .status-open { color: var(--success); font-weight: bold; text-transform: uppercase; font-size: 12px; }
+        .btn-bid { background: var(--gold-leaf); color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 4px; }
 
-        .form-section { 
-            background: white; padding: 50px; border: 1px solid #ddd; 
-            max-width: 800px; margin: 0 auto 60px;
-        }
-        .input-group { margin-bottom: 20px; }
-        .input-group label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; }
-        .input-group input, .input-group select { width: 100%; padding: 10px; border: 1px solid #ccc; }
-
-        .btn-submit { 
-            background: var(--gold-leaf); color: white; border: none; 
-            padding: 15px 30px; font-weight: bold; cursor: pointer; width: 100%;
+        .process-box { 
+            background: #fff; border: 1px solid #ddd; padding: 30px; margin-top: 40px;
+            display: flex; align-items: center; gap: 40px;
         }
     </style>
 </head>
@@ -54,63 +43,73 @@
             <img src="Tgsobabpousa1.png" alt="Seal 1">
         </div>
         <div style="text-align: right;">
-            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">PROCUREMENT DIVISION</h1>
-            <p style="font-size: 11px; color: var(--gold-leaf); margin: 0;">Sovereign Supply Chain Management</p>
+            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">PROCUREMENT OFFICE</h1>
+            <p style="font-size: 11px; color: var(--gold-leaf); margin: 0;">Keeping Community Capital Within the Community</p>
         </div>
     </header>
 
-    <main>
+    <main class="portal-container">
         <section class="procurement-hero">
-            <h2 style="font-size: 32px; margin: 0;">BUILDING THE INFRASTRUCTURE</h2>
-            <p style="opacity: 0.8; margin-top: 10px;">The Bureau prioritizes contracts with Certified Sovereign Vendors within our Target 20 Cities.</p>
+            <h2 style="margin: 0;">Open Requests for Proposal (RFP)</h2>
+            <p style="opacity: 0.8;">The Bureau is currently seeking qualified contractors for the following projects in the Philly/MN Corridor.</p>
         </section>
 
-        <div class="vendor-grid">
-            <div class="vendor-card">
-                <span class="bid-status">OPEN FOR BID: RFP-2026-004</span>
-                <h3>Pillar House Construction</h3>
-                <p style="font-size: 14px;">Seeking licensed contractors in Minneapolis for the Phase II renovation of the Unity Exchange Hub.</p>
-            </div>
-            <div class="vendor-card">
-                <span class="bid-status">OPEN FOR BID: IT-2026-009</span>
-                <h3>Secure Server Maintenance</h3>
-                <p style="font-size: 14px;">Regional IT support for Philadelphia Bureau of Records data encryption and AI-Identity Shield hardware.</p>
-            </div>
+        <div style="margin-top: 30px;">
+            <table class="bidding-table">
+                <thead>
+                    <tr>
+                        <th>Project ID</th>
+                        <th>Description</th>
+                        <th>Location</th>
+                        <th>Budget Range</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#RFP-2026-001</td>
+                        <td>Solar Grid Installation - North Philly Hub</td>
+                        <td>Philadelphia, PA</td>
+                        <td>$45k - $60k</td>
+                        <td><span class="status-open">● Open</span></td>
+                        <td><button class="btn-bid">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>#RFP-2026-004</td>
+                        <td>Security Personnel (Phase II)</td>
+                        <td>Minneapolis, MN</td>
+                        <td>$120k / Annual</td>
+                        <td><span class="status-open">● Open</span></td>
+                        <td><button class="btn-bid">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>#RFP-2026-012</td>
+                        <td>Youth Academy Curriculum Digitalization</td>
+                        <td>Remote / Philly</td>
+                        <td>$15k - $20k</td>
+                        <td><span class="status-open">● Open</span></td>
+                        <td><button class="btn-bid">View Details</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         
 
-        <div class="form-section">
-            <h2 style="text-align: center; color: var(--fed-blue);">Vendor Certification Application</h2>
-            <p style="text-align: center; font-size: 14px; color: #666; margin-bottom: 30px;">Apply to join the Association of Success preferred vendor list.</p>
-            
-            <form>
-                <div class="input-group">
-                    <label>Business Legal Name</label>
-                    <input type="text" placeholder="As registered with the State/Bureau">
-                </div>
-                <div class="input-group">
-                    <label>Industry Category</label>
-                    <select>
-                        <option>Construction & Engineering</option>
-                        <option>Technology & Cybersecurity</option>
-                        <option>Security & Peacekeeping</option>
-                        <option>Catering & Community Events</option>
-                        <option>Professional Services (Legal/Accounting)</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label>EIN / Bureau ID Number</label>
-                    <input type="text" placeholder="00-0000000">
-                </div>
-                <button class="btn-submit">SUBMIT CAPABILITY STATEMENT</button>
-            </form>
+        <div class="process-box">
+            <div style="flex: 1;">
+                <h3 style="color: var(--fed-blue);">The Sovereign Bidding Process</h3>
+                <p style="font-size: 14px; line-height: 1.6;">To ensure fairness and quality, all bids are reviewed by the **Pillar Architects**. Preference is given to vendors with a proven track record within the **Association of Success** and those who employ graduates of the **Youth Academy**.</p>
+            </div>
+            <div style="flex: 1;">
+                
+            </div>
         </div>
     </main>
 
-    <footer style="background: #111; color: #eee; padding: 60px 8%; text-align: center; border-top: 5px solid var(--fed-blue);">
-        <p>BUREAU OF NATIONAL IDENTITY | PROCUREMENT OFFICE</p>
-        <p style="font-size: 11px; opacity: 0.5;">All vendors must adhere to the Sovereign Goodness Code of Ethics.</p>
+    <footer style="background: #111; color: #777; padding: 40px; text-align: center; border-top: 5px solid var(--gold-leaf);">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | PROCUREMENT DIVISION</p>
     </footer>
 
 </body>
