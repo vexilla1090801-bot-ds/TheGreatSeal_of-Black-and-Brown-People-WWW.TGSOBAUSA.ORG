@@ -3,93 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sovereign Mutual Aid | TGSOBAUSA.ORG Emergency Response</title>
+    <title>Emergency Response | TGSOBAUSA.ORG Relief</title>
     <style>
-        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --alert-orange: #FF8C00; --safety-dark: #1a1a1a; }
-        body { margin: 0; font-family: "Courier New", Courier, monospace; background: var(--safety-dark); color: #fff; }
+        :root { --fed-blue: #0A1E3C; --alert-red: #C0392B; --safety-orange: #E67E22; --dark-slate: #2C3E50; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: #f4f4f4; color: #333; }
         
         header { 
             background: #fff; padding: 15px 8%; display: flex; 
-            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--alert-orange);
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--alert-red);
         }
-        .header-seals img { width: 80px; height: 80px; }
+        .header-seals img { width: 60px; height: 60px; }
+
+        .status-bar { 
+            background: #27ae60; color: white; text-align: center; padding: 10px; font-weight: bold; font-size: 14px;
+        }
 
         .emergency-hero { 
-            background: var(--alert-orange); color: #000; padding: 40px 8%; text-align: center;
-            font-weight: bold; text-transform: uppercase; letter-spacing: 2px;
+            background: var(--dark-slate); color: white; padding: 60px 8%;
         }
 
-        .resource-monitor { 
+        .response-grid { 
             max-width: 1200px; margin: 40px auto; display: grid; 
-            grid-template-columns: repeat(2, 1fr); gap: 30px; padding: 0 20px; 
+            grid-template-columns: 2fr 1fr; gap: 30px; padding: 0 20px;
         }
-        .monitor-card { 
-            background: #222; border: 1px solid #444; padding: 30px; 
-            border-left: 5px solid var(--gold-leaf);
-        }
-        .monitor-card h3 { color: var(--alert-orange); margin-top: 0; font-size: 18px; }
-        
-        .status-bar { height: 10px; background: #444; border-radius: 5px; margin: 15px 0; overflow: hidden; }
-        .status-fill { height: 100%; background: var(--gold-leaf); }
 
-        .aid-map { 
-            background: #fff; color: #333; padding: 60px 8%; margin-top: 40px; text-align: center;
+        .incident-card { 
+            background: white; border-radius: 8px; padding: 30px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 8px solid var(--safety-orange);
         }
-        .btn-report { 
-            background: var(--alert-orange); color: #000; border: none; padding: 20px 40px; 
-            font-weight: bold; font-size: 18px; cursor: pointer; margin-top: 20px;
+
+        .supplies-table { 
+            width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 13px;
+        }
+        .supplies-table td { padding: 10px; border-bottom: 1px solid #eee; }
+        .supplies-table tr:last-child td { border: none; }
+
+        .btn-alert { 
+            background: var(--alert-red); color: white; border: none; padding: 20px; 
+            width: 100%; font-weight: bold; cursor: pointer; border-radius: 4px; font-size: 16px;
         }
     </style>
 </head>
 <body>
 
+    <div class="status-bar">● CURRENT BUREAU SYSTEM STATUS: OPERATIONAL & SECURE</div>
+
     <header>
         <div class="header-seals">
             <img src="Tgsobabpousa1.png" alt="Seal 1">
         </div>
-        <div style="text-align: right; color: var(--fed-blue);">
-            <h1 style="font-size: 20px; margin: 0;">EMERGENCY RESPONSE DESK</h1>
-            <p style="font-size: 11px; font-weight: bold; margin: 0;">Sovereign Mutual Aid Network (SMAN)</p>
+        <div style="text-align: right;">
+            <h1 style="font-size: 20px; color: var(--fed-blue); margin: 0;">EMERGENCY RESPONSE DIVISION</h1>
+            <p style="font-size: 10px; color: var(--alert-red); margin: 0;">Rapid Relief for the Sovereign Community</p>
         </div>
     </header>
 
     <main>
         <section class="emergency-hero">
-            <h2 style="margin: 0;">System Readiness: High</h2>
-            <p style="font-size: 14px; margin-top: 5px;">Coordinating Crisis Resources for the Target 20 National Corridor</p>
+            <h2 style="font-size: 32px; margin: 0;">Disaster Readiness & Mobilization</h2>
+            <p style="opacity: 0.8; max-width: 700px; margin-top: 15px;">
+                The Bureau maintains a 30-day reserve of food, water, and medical supplies for every registered household in the Philly and MN districts.
+            </p>
         </section>
 
-        <div class="resource-monitor">
-            <div class="monitor-card">
-                <h3>Philly Hub: Essential Stocks</h3>
-                <p style="font-size: 12px; opacity: 0.8;">Dry Goods & Water Reservoirs</p>
-                <div class="status-bar"><div class="status-fill" style="width: 85%;"></div></div>
-                <p style="font-size: 11px;">Status: 85% Capacity | 12-Month Reserve</p>
+        <div class="response-grid">
+            <div class="incident-card">
+                <h3 style="color: var(--fed-blue); margin-top: 0;">Active Resource Stockpiles</h3>
+                <p style="font-size: 14px; color: #666;">Current inventory levels at Hub 01 (Philly) and Hub 04 (Minneapolis).</p>
+                
+                
+                
+                <table class="supplies-table">
+                    <tr><td><strong>Potable Water</strong></td><td>15,000 Gallons</td><td><span style="color: green;">✔ Ready</span></td></tr>
+                    <tr><td><strong>Emergency Power (Mobile)</strong></td><td>12 Units</td><td><span style="color: green;">✔ Charged</span></td></tr>
+                    <tr><td><strong>Medical Trauma Kits</strong></td><td>450 Units</td><td><span style="color: green;">✔ Stocked</span></td></tr>
+                    <tr><td><strong>Shelf-Stable Rations</strong></td><td>5,000 Days</td><td><span style="color: orange;">▲ Refill Requested</span></td></tr>
+                </table>
             </div>
 
-            <div class="monitor-card">
-                <h3>Minneapolis Hub: Medical Supplies</h3>
-                <p style="font-size: 12px; opacity: 0.8;">First Aid & Trauma Support Kits</p>
-                <div class="status-bar"><div class="status-fill" style="width: 72%;"></div></div>
-                <p style="font-size: 11px;">Status: 72% Capacity | Optimized for Winter Readiness</p>
-            </div>
+            <aside>
+                <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--alert-red); margin-top: 0;">Report an Incident</h3>
+                    <p style="font-size: 12px; color: #666; margin-bottom: 20px;">Use this portal only for immediate threats to Pillar House safety or community wellness.</p>
+                    <button class="btn-alert">TRIGGER RESPONSE SIGNAL</button>
+                </div>
+                
+                
+            </aside>
         </div>
 
-        
-
-        <section class="aid-map">
-            <h2 style="color: var(--fed-blue); font-size: 28px;">The Sovereign Safety Net</h2>
-            <p style="max-width: 800px; margin: 20px auto; line-height: 1.6;">
-                In the event of localized infrastructure disruption, the Bureau activates the <strong>Unity Exchange Protocol</strong>. This reroutes resources from neighboring Pillar Houses to the area of need, ensuring no citizen is left without the basics of survival.
-            </p>
-            <button class="btn-report">FILE EMERGENCY RESOURCE REQUEST</button>
-            <p style="font-size: 12px; color: #888; margin-top: 15px;">*Restricted to Verified Sovereigns and Pillar Architects only.</p>
-        </section>
+        <div style="max-width: 1200px; margin: 0 auto 60px; padding: 0 20px;">
+            <div style="background: #fff; padding: 40px; border-radius: 8px; border: 1px solid #ddd;">
+                <h3 style="color: var(--fed-blue);">Community Evacuation & Shelter Protocols</h3>
+                <p style="font-size: 14px; line-height: 1.7; color: #555;">
+                    In the event of a district-wide emergency, all **Great Seal ID** holders are to report to their designated Pillar House. Our structures are reinforced to serve as secure shelters with independent power and communication lines.
+                </p>
+                
+                
+            </div>
+        </div>
     </main>
 
-    <footer style="background: #000; color: #666; padding: 40px; text-align: center; border-top: 1px solid var(--alert-orange);">
-        <p>ASSOCIATION OF SUCCESS | MUTUAL AID DIVISION</p>
-        <p style="font-size: 10px; opacity: 0.5;">A Solutions-Based Response to Community Crises.</p>
+    <footer style="background: #111; color: #777; padding: 40px; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | EMERGENCY MANAGEMENT</p>
     </footer>
 
 </body>
