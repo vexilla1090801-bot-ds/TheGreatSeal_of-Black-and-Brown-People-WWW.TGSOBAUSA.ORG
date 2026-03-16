@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Broadcasting | TGSOBAUSA.ORG Media Hub</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --live-red: #C0392B; --studio-dark: #0f111a; }
+        body { margin: 0; font-family: "Helvetica Neue", sans-serif; background: var(--studio-dark); color: #fff; }
+        
+        header { 
+            background: #fff; padding: 15px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 4px solid var(--live-red);
+        }
+        .header-seals img { width: 60px; height: 60px; }
+
+        .on-air-banner { 
+            background: var(--live-red); color: white; padding: 10px; text-align: center;
+            font-weight: bold; font-size: 14px; letter-spacing: 3px; animation: blinker 2s linear infinite;
+        }
+        @keyframes blinker { 50% { opacity: 0.5; } }
+
+        .media-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        
+        .main-stream { background: #000; aspect-ratio: 16/9; border: 1px solid #333; display: flex; align-items: center; justify-content: center; position: relative; }
+        .stream-info { padding: 20px 0; border-bottom: 1px solid #333; }
+        .stream-info h2 { color: var(--gold-leaf); margin: 0; font-size: 24px; }
+
+        .program-guide { background: #1a1d29; padding: 25px; border-radius: 4px; }
+        .program-guide h3 { border-bottom: 1px solid var(--gold-leaf); padding-bottom: 10px; margin-top: 0; font-size: 16px; }
+        .program-item { padding: 15px 0; border-bottom: 1px solid #2d313f; display: flex; justify-content: space-between; font-size: 13px; }
+        .time-tag { color: var(--gold-leaf); font-weight: bold; }
+
+        .category-scroll { display: flex; gap: 15px; margin-top: 30px; overflow-x: auto; padding-bottom: 10px; }
+        .category-btn { background: #2d313f; padding: 10px 20px; border-radius: 20px; font-size: 12px; white-space: nowrap; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right; color: var(--fed-blue);">
+            <h1 style="font-size: 18px; margin: 0;">SOVEREIGN BROADCASTING NETWORK</h1>
+            <p style="font-size: 10px; font-weight: bold; margin: 0;">VOICE OF THE ASSOCIATION OF SUCCESS</p>
+        </div>
+    </header>
+
+    <div class="on-air-banner">LIVE FROM PHILADELPHIA HUB: PILLAR ARCHITECTS BRIEFING</div>
+
+    <main class="media-container">
+        <section>
+            <div class="main-stream">
+                <div style="text-align: center;">
+                    <div style="font-size: 50px; color: #444;">▶</div>
+                    <p style="color: #666; font-size: 14px;">Secure Stream: Authentication Required</p>
+                </div>
+            </div>
+            <div class="stream-info">
+                <h2>Quarterly Expansion Report: Minneapolis Growth</h2>
+                <p style="color: #bbb; font-size: 14px;">Lead Presenter: Regional Director [REDACTED] | Recorded at Hub 02</p>
+            </div>
+
+            
+
+            <div class="category-scroll">
+                <div class="category-btn" style="background: var(--gold-leaf);">Latest News</div>
+                <div class="category-btn">Director Training</div>
+                <div class="category-btn">Village Tech Tutorials</div>
+                <div class="category-btn">Youth Pillar Spotlight</div>
+                <div class="category-btn">Legal Bulletins</div>
+            </div>
+        </section>
+
+        <aside class="program-guide">
+            <h3>BROADCAST SCHEDULE (EST)</h3>
+            <div class="program-item">
+                <span>Bureau Morning Briefing</span>
+                <span class="time-tag">08:00</span>
+            </div>
+            <div class="program-item">
+                <span>Infrastructure Weekly: Philly</span>
+                <span class="time-tag">12:00</span>
+            </div>
+            <div class="program-item">
+                <span>Sovereign Health & Wellness</span>
+                <span class="time-tag">15:30</span>
+            </div>
+            <div class="program-item">
+                <span>The Director's Desk (LIVE)</span>
+                <span class="time-tag">19:00</span>
+            </div>
+
+            
+
+            <div style="margin-top: 40px; text-align: center; background: #000; padding: 20px; border: 1px dashed var(--gold-leaf);">
+                <p style="font-size: 12px; color: var(--gold-leaf);">SECURE BROADCAST PROTOCOL</p>
+                <p style="font-size: 10px; opacity: 0.7;">All media encrypted with TBBL-2026 Code.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer style="background: #000; color: #444; padding: 40px; text-align: center; border-top: 1px solid #222;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | MEDIA & COMMUNICATIONS</p>
+    </footer>
+
+</body>
+</html>
