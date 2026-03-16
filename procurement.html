@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bureau Procurement | TGSOBAUSA.ORG Vendor Portal</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --steel: #4A4A4A; }
+        body { margin: 0; font-family: "Georgia", serif; background: #f4f4f4; color: #333; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--gold-leaf);
+        }
+        .header-seals img { width: 100px; height: 100px; }
+
+        .procurement-hero { 
+            background: var(--fed-blue); color: white; padding: 60px 8%; 
+        }
+
+        .vendor-grid { 
+            display: grid; grid-template-columns: 1fr 1fr; gap: 30px; 
+            max-width: 1100px; margin: 50px auto; padding: 0 20px; 
+        }
+        .vendor-card { 
+            background: white; border: 1px solid #ddd; padding: 30px; 
+            position: relative; border-top: 5px solid var(--steel);
+        }
+        .vendor-card h3 { color: var(--fed-blue); margin-top: 0; text-transform: uppercase; }
+        
+        .bid-status { 
+            display: inline-block; background: #e8f5e9; color: #2e7d32; 
+            padding: 5px 12px; font-size: 11px; font-weight: bold; margin-bottom: 15px; 
+        }
+
+        .form-section { 
+            background: white; padding: 50px; border: 1px solid #ddd; 
+            max-width: 800px; margin: 0 auto 60px;
+        }
+        .input-group { margin-bottom: 20px; }
+        .input-group label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; }
+        .input-group input, .input-group select { width: 100%; padding: 10px; border: 1px solid #ccc; }
+
+        .btn-submit { 
+            background: var(--gold-leaf); color: white; border: none; 
+            padding: 15px 30px; font-weight: bold; cursor: pointer; width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">PROCUREMENT DIVISION</h1>
+            <p style="font-size: 11px; color: var(--gold-leaf); margin: 0;">Sovereign Supply Chain Management</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="procurement-hero">
+            <h2 style="font-size: 32px; margin: 0;">BUILDING THE INFRASTRUCTURE</h2>
+            <p style="opacity: 0.8; margin-top: 10px;">The Bureau prioritizes contracts with Certified Sovereign Vendors within our Target 20 Cities.</p>
+        </section>
+
+        <div class="vendor-grid">
+            <div class="vendor-card">
+                <span class="bid-status">OPEN FOR BID: RFP-2026-004</span>
+                <h3>Pillar House Construction</h3>
+                <p style="font-size: 14px;">Seeking licensed contractors in Minneapolis for the Phase II renovation of the Unity Exchange Hub.</p>
+            </div>
+            <div class="vendor-card">
+                <span class="bid-status">OPEN FOR BID: IT-2026-009</span>
+                <h3>Secure Server Maintenance</h3>
+                <p style="font-size: 14px;">Regional IT support for Philadelphia Bureau of Records data encryption and AI-Identity Shield hardware.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="form-section">
+            <h2 style="text-align: center; color: var(--fed-blue);">Vendor Certification Application</h2>
+            <p style="text-align: center; font-size: 14px; color: #666; margin-bottom: 30px;">Apply to join the Association of Success preferred vendor list.</p>
+            
+            <form>
+                <div class="input-group">
+                    <label>Business Legal Name</label>
+                    <input type="text" placeholder="As registered with the State/Bureau">
+                </div>
+                <div class="input-group">
+                    <label>Industry Category</label>
+                    <select>
+                        <option>Construction & Engineering</option>
+                        <option>Technology & Cybersecurity</option>
+                        <option>Security & Peacekeeping</option>
+                        <option>Catering & Community Events</option>
+                        <option>Professional Services (Legal/Accounting)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>EIN / Bureau ID Number</label>
+                    <input type="text" placeholder="00-0000000">
+                </div>
+                <button class="btn-submit">SUBMIT CAPABILITY STATEMENT</button>
+            </form>
+        </div>
+    </main>
+
+    <footer style="background: #111; color: #eee; padding: 60px 8%; text-align: center; border-top: 5px solid var(--fed-blue);">
+        <p>BUREAU OF NATIONAL IDENTITY | PROCUREMENT OFFICE</p>
+        <p style="font-size: 11px; opacity: 0.5;">All vendors must adhere to the Sovereign Goodness Code of Ethics.</p>
+    </footer>
+
+</body>
+</html>
