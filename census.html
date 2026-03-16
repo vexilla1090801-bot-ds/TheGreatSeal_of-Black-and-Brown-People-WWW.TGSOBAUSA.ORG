@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Census | TGSOBAUSA.ORG Dashboard</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --map-bg: #f0f2f5; --accent: #2980b9; }
+        body { margin: 0; font-family: "Segoe UI", Tahoma, sans-serif; background: var(--map-bg); color: #333; }
+        
+        header { 
+            background: #fff; padding: 15px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--fed-blue);
+        }
+        .header-seals img { width: 70px; height: 70px; }
+
+        .dashboard-hero { 
+            background: var(--fed-blue); color: white; padding: 40px 8%; text-align: center;
+        }
+
+        .stats-ticker { 
+            background: var(--gold-leaf); color: white; padding: 10px 0; 
+            display: flex; justify-content: space-around; font-weight: bold; font-size: 14px;
+        }
+
+        .dashboard-container { 
+            max-width: 1200px; margin: 40px auto; padding: 0 20px; 
+            display: grid; grid-template-columns: 2fr 1fr; gap: 30px; 
+        }
+
+        .map-section { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .data-cards { display: flex; flex-direction: column; gap: 20px; }
+        .data-card { background: white; padding: 25px; border-radius: 8px; border-left: 5px solid var(--accent); }
+
+        .chart-visual { height: 150px; background: #f9f9f9; margin-top: 15px; display: flex; align-items: flex-end; justify-content: space-around; padding: 10px; }
+        .bar { width: 30px; background: var(--fed-blue); border-radius: 3px 3px 0 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 18px; color: var(--fed-blue); margin: 0;">NATIONAL CENSUS BUREAU</h1>
+            <p style="font-size: 10px; color: var(--gold-leaf); margin: 0;">Real-Time Demographic & Resource Mapping</p>
+        </div>
+    </header>
+
+    <div class="stats-ticker">
+        <span>VERIFIED SOVEREIGNS: 12,842</span>
+        <span>PILLAR HOUSES: 08</span>
+        <span>SKILLED PROFESSIONALS: 3,110</span>
+        <span>ASSET VALUE: $42.5M</span>
+    </div>
+
+    <main class="dashboard-container">
+        <section class="map-section">
+            <h2 style="color: var(--fed-blue); margin-top: 0;">Target 20 Deployment Map</h2>
+            <p style="font-size: 14px; color: #666;">Tracking growth across the Philadelphia-to-Minnesota Sovereign Corridor.</p>
+            
+            
+
+            <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border: 1px dashed #ccc;">
+                <h3 style="font-size: 16px;">Active Hub Heatmap</h3>
+                <p style="font-size: 13px;">Currently viewing: <strong>High Density</strong> growth in Philadelphia West and Minneapolis North Districts.</p>
+            </div>
+        </section>
+
+        <aside class="data-cards">
+            <div class="data-card">
+                <h3 style="margin: 0; font-size: 14px; color: var(--accent);">Resource Capacity</h3>
+                <div class="chart-visual">
+                    <div class="bar" style="height: 40%;"></div>
+                    <div class="bar" style="height: 60%;"></div>
+                    <div class="bar" style="height: 85%;"></div>
+                    <div class="bar" style="height: 50%;"></div>
+                </div>
+                <p style="font-size: 11px; margin-top: 10px;">Medical | Energy | Food | Logistics</p>
+            </div>
+
+            
+
+            <div class="data-card" style="border-left-color: var(--gold-leaf);">
+                <h3 style="margin: 0; font-size: 14px;">Talent Registry</h3>
+                <ul style="font-size: 12px; padding-left: 15px; margin-top: 10px;">
+                    <li>Engineers: 420 Registered</li>
+                    <li>Medical Professionals: 185 Registered</li>
+                    <li>Educators: 612 Registered</li>
+                    <li>Skilled Trades: 1,893 Registered</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer style="background: #111; color: #666; padding: 40px; text-align: center; font-size: 10px;">
+        <p>ASSOCIATION OF SUCCESS | NATIONAL CENSUS DIVISION</p>
+        <p>All data is anonymized and protected by the AI-Identity Shield.</p>
+    </footer>
+
+</body>
+</html>
