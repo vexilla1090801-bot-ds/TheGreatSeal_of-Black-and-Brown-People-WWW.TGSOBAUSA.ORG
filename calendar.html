@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Engagement Calendar | TGSOBAUSA.ORG Bureau of Records</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --marble: #FFFFFF; }
+        body { margin: 0; font-family: "Georgia", serif; background: #F2F2F2; color: #333; }
+        
+        /* BUREAU HEADER STABILITY */
+        header { 
+            background: var(--marble); padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 6px solid var(--gold-leaf);
+        }
+        .header-seals img { width: 220px; height: 220px; object-fit: contain; }
+
+        nav { background: var(--fed-blue); padding: 0 8%; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--gold-leaf); }
+        .nav-links a { color: white; padding: 18px 25px; text-decoration: none; font-size: 13px; text-transform: uppercase; font-weight: bold; border-right: 1px solid rgba(255,255,255,0.1); }
+        .nav-links a:hover { background: var(--gold-leaf); }
+
+        /* CALENDAR CONTENT */
+        .calendar-container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        .timeline-header { text-align: center; margin-bottom: 60px; }
+        
+        .event-strip { 
+            background: white; border-left: 10px solid var(--fed-blue); 
+            margin-bottom: 20px; display: flex; padding: 30px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); align-items: center;
+        }
+        .date-box { 
+            min-width: 120px; text-align: center; border-right: 2px solid #eee; 
+            margin-right: 30px; padding-right: 30px; 
+        }
+        .date-box .month { display: block; text-transform: uppercase; font-weight: bold; color: var(--gold-leaf); }
+        .date-box .day { display: block; font-size: 32px; font-weight: bold; color: var(--fed-blue); }
+
+        .event-info h3 { margin: 0; text-transform: uppercase; color: var(--fed-blue); }
+        .event-info p { margin: 5px 0; font-size: 14px; color: #666; }
+        .location-tag { display: inline-block; background: #f0f0f0; padding: 4px 10px; font-size: 11px; font-weight: bold; margin-top: 10px; }
+
+        .exchange-line { border: 2px dashed var(--gold-leaf); padding: 20px; text-align: center; margin: 40px 0; color: var(--fed-blue); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+            <img src="Tgsobabpousa2.png" alt="Seal 2">
+        </div>
+        <div class="dept-branding">
+            <h1>Thin Black & Brown Lines USA</h1>
+            <p>Bureau of National Identity & Sovereign Records</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="records.html">Bureau of Records</a>
+            <a href="government.html">Government Affairs</a>
+            <a href="grants.html">Grant Initiatives</a>
+            <a href="infrastructure.html">Village Infrastructure</a>
+            <a href="legal.html">Legal & Copyright</a>
+        </div>
+    </nav>
+
+    <main class="calendar-container">
+        <div class="timeline-header">
+            <h2 style="font-size: 32px;">BUREAU ENGAGEMENT TIMELINE</h2>
+            <p style="font-style: italic; color: var(--gold-leaf);">Scheduled Infrastructure Milestones & National Unity Exchanges</p>
+        </div>
+
+        <div class="event-strip">
+            <div class="date-box">
+                <span class="month">APR</span>
+                <span class="day">15</span>
+            </div>
+            <div class="event-info">
+                <h3>Pillar House Opening & Ribbon Cutting</h3>
+                <p>Official unveiling of the Philadelphia Sovereign Hub. Community walkthrough and registration for the Identity Registry.</p>
+                <span class="location-tag">LOCATION: PHILADELPHIA, PA</span>
+            </div>
+        </div>
+
+        <div class="exchange-line">
+            NORTH-CENTRAL CORRIDOR SYNERGY: PHILLY ➔ MINNEAPOLIS
+        </div>
+
+        <div class="event-strip" style="border-left-color: var(--gold-leaf);">
+            <div class="date-box">
+                <span class="month">MAY</span>
+                <span class="day">22</span>
+            </div>
+            <div class="event-info">
+                <h3>Minnesota Unity Exchange Summit</h3>
+                <p>Regional expansion meeting for the Bureau of National Identity. Partnering with local agencies for the "Target 20" city roll-out.</p>
+                <span class="location-tag">LOCATION: MINNEAPOLIS, MN</span>
+            </div>
+        </div>
+
+        <div class="event-strip">
+            <div class="date-box">
+                <span class="month">JUN</span>
+                <span class="day">10</span>
+            </div>
+            <div class="event-info">
+                <h3>AI-Identity Shield & GitHub Workshop</h3>
+                <p>Sovereign-Village-OS training for developers and community architects. Securing our digital heritage.</p>
+                <span class="location-tag">LOCATION: VIRTUAL / BUREAU MAINFRAME</span>
+            </div>
+        </div>
+
+        
+
+        <div style="background: var(--fed-blue); color: white; padding: 40px; margin-top: 60px; text-align: center;">
+            <h3 style="color: var(--gold-leaf);">Hosting a Local Registry Chapter?</h3>
+            <p>If you are an authorized partner in a "Target 20" city, submit your local event for Bureau Certification.</p>
+            <button style="background: var(--gold-leaf); border: none; padding: 15px 30px; color: white; font-weight: bold; cursor: pointer;">SUBMIT EVENT FOR APPROVAL</button>
+        </div>
+    </main>
+
+    <footer style="background: #111; color: #eee; padding: 80px 8% 40px; display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 50px; border-top: 8px solid var(--fed-blue);">
+        <div class="footer-branding">
+            <img src="Tgsobabpousa1.png" style="width: 100px; margin-bottom: 20px;">
+            <p>© 2026 TBBLUSA.ORG</p>
+        </div>
+        <div style="text-align: center; font-size: 12px; color: #666;">
+            <p>FOR OFFICIAL USE ONLY | ENGAGEMENT DIVISION</p>
+        </div>
+    </footer>
+
+</body>
+</html>
