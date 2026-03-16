@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Travel Registry | TGSOBAUSA.ORG Exchange</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --sky-blue: #E3F2FD; --passport-navy: #0F2040; }
+        body { margin: 0; font-family: "Inter", sans-serif; background: #fff; color: #333; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--fed-blue);
+        }
+        .header-seals img { width: 80px; height: 80px; }
+
+        .passport-section { 
+            background: var(--passport-navy); color: white; padding: 60px 8%; display: flex;
+            align-items: center; justify-content: space-between; gap: 40px;
+        }
+        .passport-card { 
+            width: 350px; height: 220px; background: linear-gradient(135deg, #1a3a6c, #0a1e3c);
+            border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid var(--gold-leaf); position: relative;
+        }
+
+        .registry-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        .corridor-map { 
+            background: var(--sky-blue); padding: 40px; border-radius: 8px; text-align: center;
+        }
+
+        .exchange-grid { 
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 40px;
+        }
+        .exchange-card { 
+            padding: 30px; border: 1px solid #eee; border-radius: 8px; background: #fafafa;
+        }
+        .btn-travel { 
+            background: var(--gold-leaf); color: white; border: none; padding: 15px 30px; 
+            font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">TRAVEL & EXCHANGE REGISTRY</h1>
+            <p style="font-size: 11px; color: var(--gold-leaf); margin: 0;">Connecting the Target 20 Sovereign Corridors</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="passport-section">
+            <div style="flex: 1;">
+                <h2 style="font-size: 32px; color: var(--gold-leaf);">The Great Seal Member ID</h2>
+                <p style="opacity: 0.9; line-height: 1.6;">Your digital and physical "Sovereign Passport" grants you access to Bureau-protected housing, health clinics, and secure transport across all active districts.</p>
+                <button class="btn-travel">REQUEST ID CARD</button>
+            </div>
+            <div class="passport-card">
+                <div style="font-size: 10px; opacity: 0.7;">BUREAU OF NATIONAL IDENTITY</div>
+                <div style="margin-top: 20px; font-weight: bold; letter-spacing: 2px;">SOVEREIGN CITIZEN</div>
+                <div style="margin-top: 40px; font-family: monospace; font-size: 14px;">ID: TBBL-7742-2026</div>
+                <div style="margin-top: 5px; font-family: monospace; font-size: 12px;">HUB: PHILADELPHIA-WEST</div>
+                <img src="Tgsobabpousa1.png" style="position: absolute; right: 20px; bottom: 20px; width: 60px; opacity: 0.3;">
+            </div>
+        </section>
+
+        <div class="registry-container">
+            <div class="corridor-map">
+                <h3 style="color: var(--fed-blue);">Active Safe-Travel Routes</h3>
+                <p>The "Bureau Green-Line" ensures safe passage and lodging for members traveling between Philadelphia and Minneapolis.</p>
+                
+            </div>
+
+            <div class="exchange-grid">
+                <div class="exchange-card">
+                    <h3>Inter-City Exchange</h3>
+                    <p style="font-size: 14px; color: #666;">Are you a Philly-based entrepreneur looking to expand to MN? Our exchange program provides temporary housing and office space at a Minneapolis Pillar House to help you launch.</p>
+                </div>
+                <div class="exchange-card">
+                    <h3>Cultural Diplomacy</h3>
+                    <p style="font-size: 14px; color: #666;">Access exclusive events, heritage tours, and community summits designed to strengthen the bond between our regional hubs.</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer style="background: #111; color: #777; padding: 60px 8%; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | TRAVEL & DIPLOMACY DIVISION</p>
+    </footer>
+
+</body>
+</html>
