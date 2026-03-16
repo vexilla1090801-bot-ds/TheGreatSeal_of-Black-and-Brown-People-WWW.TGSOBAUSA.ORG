@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Fund | TGSOBAUSA.ORG Bureau of Records</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --marble: #FFFFFF; --pillar-green: #2E7D32; }
+        body { margin: 0; font-family: "Georgia", serif; background: #F2F2F2; color: #333; }
+        
+        header { 
+            background: var(--marble); padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 6px solid var(--gold-leaf);
+        }
+        .header-seals img { width: 220px; height: 220px; object-fit: contain; }
+
+        nav { background: var(--fed-blue); padding: 0 8%; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--gold-leaf); }
+        .nav-links a { color: white; padding: 18px 25px; text-decoration: none; font-size: 13px; text-transform: uppercase; font-weight: bold; border-right: 1px solid rgba(255,255,255,0.1); }
+        .nav-links a:hover { background: var(--gold-leaf); }
+
+        /* FUND CONTENT */
+        .fund-container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .hero-statement { background: var(--fed-blue); color: white; padding: 60px; text-align: center; border-left: 10px solid var(--gold-leaf); margin-bottom: 40px; }
+        
+        .tier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .tier-card { background: white; border: 1px solid #ddd; padding: 30px; text-align: center; transition: 0.3s; }
+        .tier-card:hover { border-color: var(--gold-leaf); transform: translateY(-5px); }
+        .tier-card h3 { color: var(--fed-blue); font-size: 18px; margin-bottom: 10px; }
+        .tier-price { font-size: 32px; font-weight: bold; color: var(--gold-leaf); display: block; margin-bottom: 20px; }
+        
+        .impact-section { margin-top: 60px; background: white; padding: 40px; border: 1px solid #ccc; }
+        .impact-list { list-style: none; padding: 0; }
+        .impact-list li { padding: 15px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        .impact-list li b { color: var(--pillar-green); }
+
+        .donate-btn { background: var(--fed-blue); color: white; border: none; padding: 15px 30px; font-weight: bold; cursor: pointer; text-transform: uppercase; width: 100%; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+            <img src="Tgsobabpousa2.png" alt="Seal 2">
+        </div>
+        <div class="dept-branding">
+            <h1>Thin Black & Brown Lines USA</h1>
+            <p>Bureau of National Identity & Sovereign Records</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="records.html">Bureau of Records</a>
+            <a href="government.html">Government Affairs</a>
+            <a href="infrastructure.html">Village Infrastructure</a>
+            <a href="legal.html">Legal</a>
+            <a href="donations.html">Sovereign Fund</a>
+        </div>
+    </nav>
+
+    <main class="fund-container">
+        <div class="hero-statement">
+            <h1 style="margin: 0;">The Sovereign Infrastructure Fund</h1>
+            <p style="font-style: italic; opacity: 0.8; margin-top: 15px;">"Investing in the physical safety and institutional identity of our community."</p>
+        </div>
+
+        <section class="tier-grid">
+            <div class="tier-card">
+                <h3>Pillar Contributor</h3>
+                <span class="tier-price">$25/mo</span>
+                <p style="font-size: 13px;">Supports youth Pillar Clubs and local community engagement in Philly/Minneapolis.</p>
+                <button class="donate-btn">SELECT TIER</button>
+            </div>
+            <div class="tier-card" style="border: 2px solid var(--gold-leaf);">
+                <h3>Sovereign Architect</h3>
+                <span class="tier-price">$100/mo</span>
+                <p style="font-size: 13px;">Directly funds the acquisition and maintenance of physical Pillar House locations.</p>
+                <button class="donate-btn" style="background: var(--gold-leaf);">SELECT TIER</button>
+            </div>
+            <div class="tier-card">
+                <h3>Legacy Founder</h3>
+                <span class="tier-price">$500+</span>
+                <p style="font-size: 13px;">One-time or recurring endowment for national Bureau expansion and legal defense.</p>
+                <button class="donate-btn">SELECT TIER</button>
+            </div>
+        </section>
+
+        
+
+        <section class="impact-section">
+            <h2 style="color: var(--fed-blue); text-transform: uppercase; border-bottom: 2px solid var(--fed-blue); padding-bottom: 10px;">Transparency & Deployment Report</h2>
+            <p>Where your sovereign contributions go:</p>
+            <ul class="impact-list">
+                <li><span>Physical Pillar House Maintenance (Philadelphia Hub)</span> <b>35%</b></li>
+                <li><span>Minnesota Expansion & Unitary Exchange Travel</span> <b>25%</b></li>
+                <li><span>Bureau of Records AI-Identity Protection Research</span> <b>20%</b></li>
+                <li><span>Youth Pillar Club Supplies & Event Coordination</span> <b>15%</b></li>
+                <li><span>Legal Defense & IP Maintenance</span> <b>5%</b></li>
+            </ul>
+        </section>
+
+        <div style="text-align: center; margin-top: 40px; color: #666; font-size: 13px;">
+            <p>Thin Black & Brown Lines USA is a registered 501(c)(3) Nonprofit Corporation.</p>
+            <p>All contributions are tax-deductible to the fullest extent of the law.</p>
+        </div>
+    </main>
+
+    <footer style="background: #111; color: #eee; padding: 60px 8%; text-align: center; border-top: 5px solid var(--fed-blue);">
+        <p>BUREAU FINANCIAL DIVISION | TGSOBAUSA.ORG</p>
+        <p style="font-size: 10px; opacity: 0.5;">Secured via Sovereign-Village-OS Financial Protocols.</p>
+    </footer>
+
+</body>
+</html>
