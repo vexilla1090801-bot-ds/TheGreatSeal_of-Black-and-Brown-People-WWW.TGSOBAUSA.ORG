@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Broadcast | TGSOBAUSA.ORG Media</title>
+    <style>
+        :root { --studio-black: #080808; --neon-amber: #FFB300; --vivid-violet: #8E44AD; --slate: #ECF0F1; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--studio-black); color: var(--slate); }
+        
+        header { 
+            background: rgba(8, 8, 8, 0.95); padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 2px solid var(--vivid-violet);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .header-seals img { width: 55px; }
+
+        .broadcast-hero { 
+            height: 80vh; background: linear-gradient(to right, rgba(0,0,0,0.9), transparent), url('film-set.jpg');
+            background-size: cover; display: flex; align-items: center; padding: 0 8%;
+        }
+
+        .channel-grid { 
+            max-width: 1400px; margin: 40px auto; display: grid; 
+            grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 0 20px;
+        }
+        .channel-card { 
+            background: #111; border: 1px solid #222; padding: 20px; border-radius: 8px;
+            text-align: center; transition: 0.3s; cursor: pointer;
+        }
+        .channel-card:hover { border-color: var(--neon-amber); background: #1a1a1a; }
+        .channel-card h3 { color: var(--neon-amber); font-size: 14px; margin: 10px 0; }
+
+        .production-pipeline { 
+            background: #fff; color: var(--studio-black); padding: 80px 8%;
+        }
+
+        .btn-live { 
+            background: #E74C3C; color: white; border: none; padding: 10px 20px; 
+            border-radius: 4px; font-weight: bold; text-transform: uppercase; display: flex; align-items: center; gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal 1"></div>
+        <div style="display: flex; gap: 20px; align-items: center;">
+            <button class="btn-live"><span style="width: 10px; height: 10px; background: white; border-radius: 50%;"></span> B-TV LIVE</button>
+            <h1 style="font-size: 18px; color: var(--neon-amber); margin: 0;">SOVEREIGN BROADCAST</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="broadcast-hero">
+            <div style="max-width: 600px;">
+                <h2 style="font-size: 52px; margin: 0; line-height: 1.1;">THE REVOLUTION<br><span style="color: var(--vivid-violet);">WILL BE PRODUCED.</span></h2>
+                <p style="margin-top: 25px; font-size: 20px; opacity: 0.8; line-height: 1.6;">
+                    Bureau Media Group is the voice of the Association of Success. We document our triumphs, preserve our history, and architect our future.
+                </p>
+            </div>
+        </section>
+
+        
+
+        <div class="channel-grid">
+            <div class="channel-card"><h3>B-NEWS</h3><p style="font-size: 11px;">Fact-based reporting for the Diaspora.</p></div>
+            <div class="channel-card"><h3>SOVEREIGN CINEMA</h3><p style="font-size: 11px;">Feature films with high-value themes.</p></div>
+            <div class="channel-card"><h3>KIDS-ACADEMY TV</h3><p style="font-size: 11px;">Educational content for the Youth Academy.</p></div>
+            <div class="channel-card"><h3>DOC-VAULT</h3><p style="font-size: 11px;">The recorded history of our movement.</p></div>
+        </div>
+
+        <section class="production-pipeline">
+            <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    
+                </div>
+                <div>
+                    <h2 style="font-size: 32px; color: var(--studio-black);">Community-Greenlit Media</h2>
+                    <p style="line-height: 1.8; font-size: 16px;">
+                        Through our **Sovereign IP Office** (Page 56), we fund content that the community actually wants to see. Our "Green-Light Portal" allows Citizens to use their **Sovereign Fund** tokens to vote on script developments. 
+                    </p>
+                    <p style="line-height: 1.8; font-size: 16px; margin-top: 15px;">
+                        This ensures our creators are always supported and our audience is always engaged. We are building the next generation of directors, writers, and technical crews.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer style="background: #000; color: #444; padding: 40px; text-align: center; border-top: 1px solid #222;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | MEDIA & BROADCAST DIVISION</p>
+    </footer>
+
+</body>
+</html>
