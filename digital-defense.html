@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Defense | TGSOBAUSA.ORG Cybersecurity</title>
+    <style>
+        :root { --terminal-green: #00FF41; --obsidian: #0D0D0D; --data-blue: #00A8FF; --danger-red: #FF4B2B; }
+        body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--obsidian); color: #FFF; }
+        
+        header { 
+            background: rgba(13, 13, 13, 0.9); padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 2px solid var(--terminal-green);
+        }
+        .header-seals img { width: 50px; filter: drop-shadow(0 0 5px var(--terminal-green)); }
+
+        .shield-hero { 
+            padding: 80px 8%; background: radial-gradient(circle at center, #1A1A1A 0%, var(--obsidian) 100%);
+            text-align: left;
+        }
+
+        .threat-dashboard { 
+            max-width: 1200px; margin: -40px auto 40px; display: grid; 
+            grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px;
+        }
+        .node-card { 
+            background: #151515; border: 1px solid #333; padding: 25px; border-radius: 4px;
+            position: relative; overflow: hidden;
+        }
+        .node-card::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: var(--terminal-green); }
+        .node-card h4 { font-size: 10px; color: var(--terminal-green); text-transform: uppercase; margin: 0; }
+        .node-card .stat { font-size: 24px; font-weight: bold; margin-top: 10px; }
+
+        .defense-protocols { 
+            max-width: 1200px; margin: 60px auto; display: grid; 
+            grid-template-columns: 1.5fr 1fr; gap: 40px; padding: 0 20px;
+        }
+
+        .btn-secure { 
+            background: transparent; color: var(--terminal-green); border: 1px solid var(--terminal-green);
+            padding: 15px 30px; cursor: pointer; text-transform: uppercase; font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-secure:hover { background: var(--terminal-green); color: var(--obsidian); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal 1"></div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 18px; color: var(--terminal-green); margin: 0;">DIGITAL DEFENSE UNIT</h1>
+            <p style="font-size: 9px; color: #666; margin: 0;">Encryption. Vigilance. Sovereignty.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="shield-hero">
+            <h2 style="font-size: 42px; margin: 0; color: var(--terminal-green);">PROTECT THE LEDGER.</h2>
+            <p style="max-width: 700px; margin-top: 25px; font-size: 16px; color: #AAA; line-height: 1.6;">
+                The Bureau’s Cyber Defense Unit (CDU) operates 24/7 to neutralize digital threats, ensuring our economy, records, and communications remain private and operational.
+            </p>
+        </section>
+
+        
+
+        <div class="threat-dashboard">
+            <div class="node-card"><h4>Firewall Integrity</h4><div class="stat">100%</div></div>
+            <div class="node-card"><h4>Active Attacks Blocked</h4><div class="stat">14,209</div></div>
+            <div class="node-card"><h4>Ledger Sync State</h4><div class="stat">OPTIMAL</div></div>
+        </div>
+
+        <div class="defense-protocols">
+            <div>
+                <h3 style="color: var(--data-blue);">Quantum-Resistant Encryption</h3>
+                <p style="color: #BBB; line-height: 1.8;">
+                    While most commercial systems use legacy encryption, the Bureau utilizes lattice-based cryptography. This ensures that even the next generation of quantum computers cannot "crack" the personal identities or financial records of our citizens. 
+                </p>
+                
+                
+
+                <ul style="list-style: none; padding: 0; font-size: 14px; margin-top: 30px; color: var(--terminal-green);">
+                    <li style="margin-bottom: 12px;">◈ **End-to-End Privacy:** No data travels unencrypted across the Mesh-Net.</li>
+                    <li style="margin-bottom: 12px;">◈ **Zero-Trust Architecture:** Continuous verification for all network nodes.</li>
+                    <li style="margin-bottom: 12px;">◈ **Self-Healing Infrastructure:** Automated AI-driven threat neutralization.</li>
+                </ul>
+            </div>
+            <div style="background: #111; padding: 35px; border: 1px solid #222;">
+                <h4 style="margin-top: 0; color: var(--danger-red);">Vulnerability Bounty</h4>
+                <p style="font-size: 13px; color: #888;">Members of the **Creative/Tech Guild** are encouraged to audit our code. Found a bug?</p>
+                
+                <button class="btn-secure" style="width: 100%; margin-top: 20px;">Submit Security Report</button>
+                
+                
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #000; padding: 40px; text-align: center; border-top: 1px solid #222; font-size: 12px; color: #444;">
+        <p>ENCRYPTION ACTIVE // PROTOCOL 7-7-ALPHA // © 2026 BUREAU OF NATIONAL IDENTITY</p>
+    </footer>
+
+</body>
+</html>
