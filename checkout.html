@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Queue | TGSOBAUSA.ORG Bureau of Records</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --marble: #FFFFFF; }
+        body { margin: 0; font-family: "Georgia", serif; background: #f4f4f4; color: #333; }
+        
+        /* SECURE HEADER */
+        .secure-banner { background: #222; color: #00ff00; font-family: monospace; font-size: 11px; padding: 5px 8%; text-align: center; letter-spacing: 1px; }
+        header { background: var(--marble); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; border-bottom: 5px solid var(--gold-leaf); }
+        .header-seals img { width: 100px; height: 100px; object-fit: contain; }
+
+        /* MULTI-STEP FLOW */
+        .checkout-container { max-width: 800px; margin: 50px auto; background: white; padding: 50px; border: 1px solid #ddd; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .step-indicator { display: flex; justify-content: space-between; margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .step { font-size: 12px; font-weight: bold; color: #ccc; text-transform: uppercase; }
+        .step.active { color: var(--fed-blue); border-bottom: 2px solid var(--fed-blue); }
+
+        /* FORM ELEMENTS */
+        .form-group { margin-bottom: 25px; }
+        label { display: block; font-weight: bold; font-size: 14px; margin-bottom: 8px; color: var(--fed-blue); }
+        input, select, textarea { width: 100%; padding: 15px; border: 1px solid #ccc; background: #fafafa; font-family: serif; box-sizing: border-box; }
+        
+        .upload-zone { border: 2px dashed #ddd; padding: 30px; text-align: center; background: #fdfdfd; cursor: pointer; transition: 0.3s; }
+        .upload-zone:hover { border-color: var(--gold-leaf); background: #fffcf5; }
+
+        .btn-authorize { background: var(--fed-blue); color: white; border: none; padding: 20px; width: 100%; font-size: 16px; font-weight: bold; cursor: pointer; letter-spacing: 2px; }
+        .btn-authorize:hover { background: var(--gold-leaf); }
+
+        .price-summary { background: #f9f9f9; padding: 20px; border-left: 5px solid var(--gold-leaf); margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="secure-banner">SECURE DATA ENCRYPTED VIA SOVEREIGN-VILLAGE-OS | END-TO-END VERIFICATION ACTIVE</div>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+            <img src="Tgsobabpousa2.png" alt="Seal 2">
+        </div>
+        <div style="text-align: right;">
+            <p style="margin:0; font-weight: bold; color: var(--fed-blue);">BUREAU OF RECORDS</p>
+            <p style="margin:0; font-size: 12px; color: var(--gold-leaf);">Transaction ID: #882-VERIFY</p>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <div class="step-indicator">
+            <span class="step active">01. Selection</span>
+            <span class="step active">02. Documentation</span>
+            <span class="step">03. Authorization</span>
+            <span class="step">04. Issuance</span>
+        </div>
+
+        <div class="price-summary">
+            <h3 style="margin: 0; font-size: 16px;">Product: AI-Identity Shield (Level 4 Protection)</h3>
+            <p style="margin: 5px 0 0 0; font-size: 24px; font-weight: bold; color: var(--fed-blue);">$199.00 <small style="font-size: 12px; font-weight: normal; color: #666;">One-Time Sovereign Fee</small></p>
+        </div>
+
+        <form action="dashboard.html">
+            <div class="form-group">
+                <label>Verification Category</label>
+                <select disabled>
+                    <option>Proprietary Identity Protection</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Evidence of Heritage (Required for Seal Issuance)</label>
+                <p style="font-size: 12px; color: #777; margin-bottom: 10px;">Please upload 1-2 documents or a written statement verifying your connection to the Pillar community or family lineage.</p>
+                <div class="upload-zone">
+                    <p style="margin: 0; color: #999;">Drag and drop files here or <strong>Click to Browse</strong></p>
+                    <p style="font-size: 10px; color: #bbb; margin-top: 5px;">(PDF, JPG, PNG - Max 10MB)</p>
+                </div>
+            </div>
+
+            
+
+            <div class="form-group">
+                <label>Financial Contribution Authorization</label>
+                <input type="text" placeholder="Cardholder Name (Legal Identity)">
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <input type="text" placeholder="Card Number" style="flex: 2;">
+                    <input type="text" placeholder="EXP" style="flex: 1;">
+                    <input type="text" placeholder="CVC" style="flex: 1;">
+                </div>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <label style="display: flex; align-items: flex-start; font-weight: normal; font-size: 12px;">
+                    <input type="checkbox" style="width: auto; margin-right: 10px; margin-top: 3px;" required>
+                    <span>I hereby authorize Thin Black & Brown Lines USA to process this verification fee. I understand that this funds the Village Infrastructure projects in Philadelphia and Minnesota.</span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn-authorize">AUTHORIZE & ISSUE CERTIFICATION</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 30px; opacity: 0.5;">
+            <img src="https://img.icons8.com/color/48/000000/visa.png" width="30">
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png" width="30">
+            <img src="https://img.icons8.com/color/48/000000/google-pay.png" width="30">
+            <img src="https://img.icons8.com/color/48/000000/apple-pay.png" width="30">
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding-bottom: 50px; color: #888; font-size: 12px;">
+        <p>BUREAU OF RECORDS | TGSOBAUSA.ORG</p>
+        <p>Your data is protected by the Association of Success Corporate Charter.</p>
+    </footer>
+
+</body>
+</html>
