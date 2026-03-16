@@ -3,106 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sovereign Broadcasting | TGSOBAUSA.ORG Media Hub</title>
+    <title>Sovereign Broadcasting | TGSOBAUSA.ORG Media</title>
     <style>
-        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --live-red: #C0392B; --studio-dark: #0f111a; }
-        body { margin: 0; font-family: "Helvetica Neue", sans-serif; background: var(--studio-dark); color: #fff; }
+        :root { --fed-blue: #0A1E3C; --signal-red: #E74C3C; --studio-dark: #121212; --gold-leaf: #B8860B; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--studio-dark); color: #fff; }
         
         header { 
-            background: #fff; padding: 15px 8%; display: flex; 
-            justify-content: space-between; align-items: center; border-bottom: 4px solid var(--live-red);
+            background: #000; padding: 15px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 3px solid var(--signal-red);
+            position: sticky; top: 0; z-index: 1000;
         }
-        .header-seals img { width: 60px; height: 60px; }
-
-        .on-air-banner { 
-            background: var(--live-red); color: white; padding: 10px; text-align: center;
-            font-weight: bold; font-size: 14px; letter-spacing: 3px; animation: blinker 2s linear infinite;
+        .live-indicator { 
+            background: var(--signal-red); color: white; padding: 4px 10px; font-weight: bold; 
+            font-size: 12px; border-radius: 3px; display: flex; align-items: center; gap: 5px;
         }
-        @keyframes blinker { 50% { opacity: 0.5; } }
+        .dot { height: 8px; width: 8px; background: white; border-radius: 50%; display: inline-block; animation: blink 1s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
-        .media-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
-        
-        .main-stream { background: #000; aspect-ratio: 16/9; border: 1px solid #333; display: flex; align-items: center; justify-content: center; position: relative; }
-        .stream-info { padding: 20px 0; border-bottom: 1px solid #333; }
-        .stream-info h2 { color: var(--gold-leaf); margin: 0; font-size: 24px; }
+        .broadcast-hero { 
+            height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('studio-bg.jpg');
+            background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
 
-        .program-guide { background: #1a1d29; padding: 25px; border-radius: 4px; }
-        .program-guide h3 { border-bottom: 1px solid var(--gold-leaf); padding-bottom: 10px; margin-top: 0; font-size: 16px; }
-        .program-item { padding: 15px 0; border-bottom: 1px solid #2d313f; display: flex; justify-content: space-between; font-size: 13px; }
-        .time-tag { color: var(--gold-leaf); font-weight: bold; }
+        .content-grid { 
+            max-width: 1200px; margin: 40px auto; padding: 0 20px; 
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .program-card { 
+            background: #1c1c1c; border: 1px solid #333; padding: 15px; transition: 0.3s;
+        }
+        .program-card:hover { border-color: var(--gold-leaf); transform: translateY(-5px); }
+        .thumbnail { width: 100%; height: 180px; background: #000; margin-bottom: 15px; }
 
-        .category-scroll { display: flex; gap: 15px; margin-top: 30px; overflow-x: auto; padding-bottom: 10px; }
-        .category-btn { background: #2d313f; padding: 10px 20px; border-radius: 20px; font-size: 12px; white-space: nowrap; cursor: pointer; }
+        .media-stats { 
+            background: var(--fed-blue); padding: 40px 8%; display: flex; justify-content: space-around;
+        }
+        .stat-item { text-align: center; }
+        .stat-item h4 { color: var(--gold-leaf); margin-bottom: 5px; text-transform: uppercase; }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="header-seals">
-            <img src="Tgsobabpousa1.png" alt="Seal 1">
-        </div>
-        <div style="text-align: right; color: var(--fed-blue);">
-            <h1 style="font-size: 18px; margin: 0;">SOVEREIGN BROADCASTING NETWORK</h1>
-            <p style="font-size: 10px; font-weight: bold; margin: 0;">VOICE OF THE ASSOCIATION OF SUCCESS</p>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal 1" style="width: 50px;"></div>
+        <div class="live-indicator"><span class="dot"></span> LIVE: BUREAU EVENING UPDATE</div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 18px; color: #fff; margin: 0;">SOVEREIGN BROADCASTING NETWORK</h1>
+            <p style="font-size: 9px; color: var(--gold-leaf); margin: 0;">The Unfiltered Voice of Success</p>
         </div>
     </header>
 
-    <div class="on-air-banner">LIVE FROM PHILADELPHIA HUB: PILLAR ARCHITECTS BRIEFING</div>
-
-    <main class="media-container">
-        <section>
-            <div class="main-stream">
-                <div style="text-align: center;">
-                    <div style="font-size: 50px; color: #444;">▶</div>
-                    <p style="color: #666; font-size: 14px;">Secure Stream: Authentication Required</p>
-                </div>
-            </div>
-            <div class="stream-info">
-                <h2>Quarterly Expansion Report: Minneapolis Growth</h2>
-                <p style="color: #bbb; font-size: 14px;">Lead Presenter: Regional Director [REDACTED] | Recorded at Hub 02</p>
-            </div>
-
-            
-
-            <div class="category-scroll">
-                <div class="category-btn" style="background: var(--gold-leaf);">Latest News</div>
-                <div class="category-btn">Director Training</div>
-                <div class="category-btn">Village Tech Tutorials</div>
-                <div class="category-btn">Youth Pillar Spotlight</div>
-                <div class="category-btn">Legal Bulletins</div>
-            </div>
+    <main>
+        <section class="broadcast-hero">
+            <h2 style="font-size: 48px; margin: 0; letter-spacing: 2px;">THE TRUTH IS SOVEREIGN</h2>
+            <p style="max-width: 600px; font-size: 18px; opacity: 0.8;">Stream our 24/7 signal for economic intelligence, community news, and cultural excellence.</p>
+            <button style="background: white; color: black; border: none; padding: 15px 40px; font-weight: bold; margin-top: 20px; cursor: pointer;">WATCH LIVE SIGNAL</button>
         </section>
 
-        <aside class="program-guide">
-            <h3>BROADCAST SCHEDULE (EST)</h3>
-            <div class="program-item">
-                <span>Bureau Morning Briefing</span>
-                <span class="time-tag">08:00</span>
-            </div>
-            <div class="program-item">
-                <span>Infrastructure Weekly: Philly</span>
-                <span class="time-tag">12:00</span>
-            </div>
-            <div class="program-item">
-                <span>Sovereign Health & Wellness</span>
-                <span class="time-tag">15:30</span>
-            </div>
-            <div class="program-item">
-                <span>The Director's Desk (LIVE)</span>
-                <span class="time-tag">19:00</span>
-            </div>
+        
 
-            
-
-            <div style="margin-top: 40px; text-align: center; background: #000; padding: 20px; border: 1px dashed var(--gold-leaf);">
-                <p style="font-size: 12px; color: var(--gold-leaf);">SECURE BROADCAST PROTOCOL</p>
-                <p style="font-size: 10px; opacity: 0.7;">All media encrypted with TBBL-2026 Code.</p>
+        <div class="content-grid">
+            <div class="program-card">
+                <div class="thumbnail"></div>
+                <span style="color: var(--gold-leaf); font-size: 11px; font-weight: bold;">SERIES: THE BLUEPRINT</span>
+                <h3 style="font-size: 16px;">How to Scale Your Business to the 10%</h3>
+                <p style="font-size: 12px; color: #888;">Hosted by the Lead Director of the Sovereign Fund.</p>
             </div>
-        </aside>
+            <div class="program-card">
+                <div class="thumbnail"></div>
+                <span style="color: var(--gold-leaf); font-size: 11px; font-weight: bold;">DAILY: HUB NEWS</span>
+                <h3 style="font-size: 16px;">Minneapolis District 4 Launch</h3>
+                <p style="font-size: 12px; color: #888;">Reporting live from the newest Resource Hub opening.</p>
+            </div>
+            <div class="program-card">
+                <div class="thumbnail"></div>
+                <span style="color: var(--gold-leaf); font-size: 11px; font-weight: bold;">EDU: YOUTH FRONTIER</span>
+                <h3 style="font-size: 16px;">Advanced Robotics for 5th Grade</h3>
+                <p style="font-size: 12px; color: #888;">A look inside the Sovereign Academy curriculum.</p>
+            </div>
+        </div>
+
+        
+
+        <section class="media-stats">
+            <div class="stat-item"><h4>Subscribers</h4><div style="font-size: 24px; font-weight: bold;">420k+</div></div>
+            <div class="stat-item"><h4>Active Channels</h4><div style="font-size: 24px; font-weight: bold;">12</div></div>
+            <div class="stat-item"><h4>Global Reach</h4><div style="font-size: 24px; font-weight: bold;">24 Countries</div></div>
+        </section>
     </main>
 
-    <footer style="background: #000; color: #444; padding: 40px; text-align: center; border-top: 1px solid #222;">
-        <p>© 2026 BUREAU OF NATIONAL IDENTITY | MEDIA & COMMUNICATIONS</p>
+    <footer style="background: #000; padding: 40px; text-align: center; border-top: 1px solid #222; color: #444;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | COMMUNICATIONS DIVISION</p>
     </footer>
 
 </body>
