@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Vault | TGSOBAUSA.ORG Genealogy</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --sepia: #704214; --linen: #FAF9F6; }
+        body { margin: 0; font-family: "Georgia", serif; background: var(--linen); color: #2c3e50; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--sepia);
+        }
+        .header-seals img { width: 90px; height: 90px; }
+
+        .heritage-hero { 
+            background: linear-gradient(rgba(112, 66, 20, 0.8), rgba(112, 66, 20, 0.8)), url('heritage-bg.jpg'); 
+            background-size: cover; color: white; padding: 80px 8%; text-align: center;
+        }
+
+        .vault-sections { 
+            max-width: 1100px; margin: 50px auto; display: grid; 
+            grid-template-columns: 1fr 1fr; gap: 40px; padding: 0 20px; 
+        }
+        .vault-card { 
+            background: white; border: 1px solid #dcdcdc; padding: 40px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 6px solid var(--gold-leaf);
+        }
+        .vault-card h3 { color: var(--sepia); margin-top: 0; font-variant: small-caps; }
+        
+        .dna-registry { 
+            background: var(--fed-blue); color: white; padding: 60px 8%; text-align: center; margin-top: 40px;
+        }
+        .btn-archive { 
+            background: var(--gold-leaf); color: white; border: none; padding: 15px 40px; 
+            font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">HERITAGE & GENEALOGY</h1>
+            <p style="font-size: 11px; color: var(--sepia); margin: 0;">Tracing the Bloodlines of the Diaspora</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="heritage-hero">
+            <h2 style="font-size: 36px; margin: 0; letter-spacing: 2px;">YOUR HISTORY IS YOUR POWER</h2>
+            <p style="opacity: 0.9; margin-top: 10px;">The Bureau of Records ensures that no family story is lost to time.</p>
+        </section>
+
+        
+
+        <div class="vault-sections">
+            <div class="vault-card">
+                <h3>Oral History Repository</h3>
+                <p style="font-size: 14px; line-height: 1.6;">Upload audio and video recordings of elders in Philadelphia and Minneapolis. These records are encrypted and stored as <strong>"Cultural Assets"</strong> within the Bureau’s permanent archive.</p>
+                <button class="btn-archive" style="background: var(--sepia);">UPLOAD HISTORY</button>
+            </div>
+            <div class="vault-card">
+                <h3>The Lineage Registry</h3>
+                <p style="font-size: 14px; line-height: 1.6;">Trace your roots across state lines and oceans. Our research team assists in connecting modern <strong>Sovereign Citizens</strong> to their historical land-owners, craftsmen, and leaders.</p>
+                <button class="btn-archive" style="background: var(--fed-blue);">START SEARCH</button>
+            </div>
+        </div>
+
+        
+
+        <section class="dna-registry">
+            <h2 style="color: var(--gold-leaf);">The Biological Identity Shield</h2>
+            <p style="max-width: 750px; margin: 20px auto; font-size: 18px; line-height: 1.6;">
+                By securely linking genetic markers to your <strong>Great Seal Identity</strong>, we provide a scientific anchor for your heritage. This is the ultimate proof of identity, protected by the **Bureau Cyber-Defense** (Page 36).
+            </p>
+            <p style="font-size: 14px; color: #ccc;">*Private. Encrypted. Sovereign.*</p>
+        </section>
+    </main>
+
+    <footer style="background: #111; color: #777; padding: 60px 8%; text-align: center; border-top: 5px solid var(--gold-leaf);">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | HERITAGE DIVISION</p>
+        <p style="font-size: 10px;">Restoring the Past to Secure the Future.</p>
+    </footer>
+
+</body>
+</html>
