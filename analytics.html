@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Analytics | TGSOBAUSA.ORG Transparency</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --graph-green: #2ecc71; }
+        body { margin: 0; font-family: "Helvetica", sans-serif; background: #0b0e14; color: #e0e0e0; }
+        
+        header { 
+            background: #161b22; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 2px solid var(--gold-leaf);
+        }
+        .header-seals img { width: 60px; height: 60px; filter: grayscale(1) brightness(2); }
+
+        .dashboard-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* METRIC CARDS */
+        .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+        .metric-card { background: #1c2128; border: 1px solid #30363d; padding: 20px; border-radius: 8px; text-align: center; }
+        .metric-value { display: block; font-size: 28px; font-weight: bold; color: var(--gold-leaf); }
+        .metric-label { font-size: 12px; color: #8b949e; text-transform: uppercase; margin-top: 5px; }
+
+        /* ANALYTICS SECTIONS */
+        .chart-row { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-bottom: 40px; }
+        .chart-box { background: #1c2128; border: 1px solid #30363d; padding: 30px; border-radius: 8px; height: 300px; position: relative; }
+        .chart-box h3 { margin-top: 0; font-size: 16px; color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
+
+        .city-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px; }
+        .city-table th { text-align: left; color: #8b949e; padding: 10px; border-bottom: 1px solid #30363d; }
+        .city-table td { padding: 12px 10px; border-bottom: 1px solid #21262d; }
+        .status-up { color: var(--graph-green); }
+
+        footer { text-align: center; padding: 40px; font-size: 12px; color: #484f58; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h2 style="margin:0; font-size: 14px; color: #58a6ff;">SYSTEM STATUS: OPERATIONAL</h2>
+            <p style="margin:0; font-size: 11px; color: var(--gold-leaf);">REAL-TIME IMPACT TRACKING v4.0</p>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-value">4,281</span>
+                <span class="metric-label">Verified Sovereigns</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">12</span>
+                <span class="metric-label">Active Pillar Houses</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">$1.2M</span>
+                <span class="metric-label">Infrastructure Funded</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">94%</span>
+                <span class="metric-label">Community Retention</span>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-box">
+                <h3>Regional Enrollment Growth (2025-2026)</h3>
+                
+                <p style="font-size: 12px; color: #8b949e; margin-top: 100px; text-align: center;">Enrollment spikes correlate with Pillar House openings in Philadelphia and Minneapolis.</p>
+            </div>
+            <div class="chart-box">
+                <h3>Fund Allocation</h3>
+                
+            </div>
+        </div>
+
+        <div class="chart-box" style="height: auto;">
+            <h3>Target 20 City Deployment Status</h3>
+            <table class="city-table">
+                <thead>
+                    <tr>
+                        <th>Hub Location</th>
+                        <th>Phase</th>
+                        <th>Resource Utilization</th>
+                        <th>Success Index</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Philadelphia, PA (HQ)</td>
+                        <td>Level 5 (Operational)</td>
+                        <td>88%</td>
+                        <td class="status-up">▲ 12.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Minneapolis, MN</td>
+                        <td>Level 4 (Expansion)</td>
+                        <td>64%</td>
+                        <td class="status-up">▲ 22.1%</td>
+                    </tr>
+                    <tr>
+                        <td>Detroit, MI</td>
+                        <td>Level 2 (Inquiry)</td>
+                        <td>12%</td>
+                        <td>--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>BUREAU OF NATIONAL IDENTITY | DATA & ANALYTICS DIVISION</p>
+        <p>All data is anonymized via Sovereign-Village-OS to protect citizen privacy.</p>
+    </footer>
+
+</body>
+</html>
