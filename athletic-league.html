@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Athletics | TGSOBAUSA.ORG League</title>
+    <style>
+        :root { --electric-blue: #0070FF; --carbon: #1A1A1A; --victory-gold: #FFD700; --fed-blue: #0A1E3C; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: #000; color: #fff; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--electric-blue);
+        }
+        .header-seals img { width: 60px; filter: invert(1); }
+
+        .league-hero { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('stadium-bg.jpg');
+            background-size: cover; padding: 80px 8%; text-align: left;
+        }
+
+        .performance-grid { 
+            max-width: 1200px; margin: 40px auto; display: grid; 
+            grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20px;
+        }
+        .p-card { 
+            background: var(--carbon); border: 1px solid #333; padding: 30px; border-radius: 4px;
+            text-align: center; transition: 0.3s;
+        }
+        .p-card:hover { border-color: var(--victory-gold); transform: scale(1.02); }
+        .p-card h3 { color: var(--victory-gold); margin-top: 0; text-transform: uppercase; letter-spacing: 1px; }
+
+        .training-section { 
+            background: #fff; color: var(--carbon); padding: 80px 8%; display: grid;
+            grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: center;
+        }
+
+        .btn-join { 
+            background: var(--electric-blue); color: white; border: none; padding: 18px 40px; 
+            font-weight: bold; cursor: pointer; text-transform: uppercase; border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal 1"></div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 20px; color: var(--fed-blue); margin: 0;">SOVEREIGN ATHLETIC LEAGUE</h1>
+            <p style="font-size: 10px; color: var(--electric-blue); margin: 0;">Building the Peak Performance Nation</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="league-hero">
+            <h2 style="font-size: 48px; margin: 0; line-height: 1;">STRENGTH. DISCIPLINE.<br><span style="color: var(--victory-gold);">VICTORY.</span></h2>
+            <p style="max-width: 600px; margin-top: 25px; font-size: 18px; opacity: 0.9;">
+                The Bureau Athletic League cultivates the physical elite of the diaspora, providing world-class coaching, facilities, and a platform for competitive excellence.
+            </p>
+        </section>
+
+        
+
+        <div class="performance-grid">
+            <div class="p-card">
+                <h3>The Junior League</h3>
+                <p style="font-size: 14px; opacity: 0.8;">Integrated with the **Youth Academy** (Page 15). Focusing on character, fundamental skills, and team chemistry.</p>
+            </div>
+            <div class="p-card">
+                <h3>Elite Training Centers</h3>
+                <p style="font-size: 14px; opacity: 0.8;">Bio-mechanic analysis and specialized nutrition programs managed by the **Wellness Division** (Page 46).</p>
+            </div>
+            <div class="p-card">
+                <h3>Sovereign Games</h3>
+                <p style="font-size: 14px; opacity: 0.8;">Our national championships held annually across the Target 20 Hubs, celebrating our top-tier talent.</p>
+            </div>
+        </div>
+
+        <section class="training-section">
+            <div>
+                <h2 style="font-size: 36px; color: var(--fed-blue);">The Science of the Athlete</h2>
+                <p style="line-height: 1.8; font-size: 16px;">
+                    We don't just "play ball." The League utilizes wearable technology and AI-driven data analysis (Page 73) to monitor the health and progress of our athletes. By reducing injury risk and optimizing recovery through **Bureau Water** (Page 74) and **Sovereign Nutrition** (Page 67), we ensure our people compete at their highest potential for longer.
+                </p>
+                
+                
+
+                <button class="btn-join" style="margin-top: 30px;">Register for the League</button>
+            </div>
+            <div style="background: var(--carbon); padding: 40px; border-radius: 8px; color: white;">
+                <h4 style="color: var(--victory-gold); margin-top: 0;">Current League Status</h4>
+                <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 2;">
+                    <li>✓ Active Youth Teams: 242</li>
+                    <li>✓ Professional Coaches: 48</li>
+                    <li>✓ Regional Hubs: Philly / MPLS / ATL</li>
+                    <li>✓ Next Games: Summer 2026</li>
+                </ul>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer style="background: #111; color: #555; padding: 40px; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | DEPARTMENT OF ATHLETICS</p>
+    </footer>
+
+</body>
+</html>
