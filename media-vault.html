@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Film Archive | TGSOBAUSA.ORG Media</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --cinema-black: #050505; --action-red: #e50914; }
+        body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: var(--cinema-black); color: #fff; }
+        
+        header { 
+            background: rgba(0,0,0,0.9); padding: 15px 5%; display: flex; 
+            justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100;
+        }
+        .header-seals img { width: 50px; height: 50px; }
+
+        .hero-feature { 
+            height: 70vh; background: linear-gradient(to top, var(--cinema-black), transparent), url('feature-doc.jpg');
+            background-size: cover; display: flex; align-items: flex-end; padding: 0 5% 60px;
+        }
+
+        .media-row { padding: 40px 5%; }
+        .row-title { font-size: 20px; color: var(--gold-leaf); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .thumbnail-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .video-card { 
+            background: #111; border-radius: 4px; overflow: hidden; 
+            transition: transform 0.3s; cursor: pointer; border: 1px solid #222;
+        }
+        .video-card:hover { transform: scale(1.05); border-color: var(--gold-leaf); }
+        .video-thumb { width: 100%; aspect-ratio: 16/9; background: #333; }
+        .video-info { padding: 15px; font-size: 13px; }
+
+        .btn-play { background: #fff; color: #000; padding: 10px 25px; border: none; font-weight: bold; cursor: pointer; margin-right: 10px; }
+        .btn-list { background: rgba(255,255,255,0.2); color: #fff; padding: 10px 25px; border: none; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals"><img src="Tgsobabpousa1.png" alt="Seal"></div>
+        <nav style="display: flex; gap: 30px; font-size: 14px;">
+            <span style="color: var(--gold-leaf);">HOME</span>
+            <span>DOCUMENTARIES</span>
+            <span>TRAINING</span>
+            <span>ARCHIVE</span>
+        </nav>
+        <div style="font-size: 12px; border: 1px solid var(--gold-leaf); padding: 5px 15px;">MEMBER ACCESS: ACTIVE</div>
+    </header>
+
+    <section class="hero-feature">
+        <div style="max-width: 600px;">
+            <h1 style="font-size: 48px; margin-bottom: 10px;">The Pillar Architects</h1>
+            <p style="font-size: 16px; margin-bottom: 20px;">A 4-part docuseries following the 2026 expansion from Philadelphia Hub 01 to the Minneapolis North District.</p>
+            <button class="btn-play">▶ PLAY NOW</button>
+            <button class="btn-list">+ MY ARCHIVE</button>
+        </div>
+    </section>
+
+    <main>
+        <div class="media-row">
+            <h2 class="row-title">Operational Documentaries</h2>
+            <div class="thumbnail-grid">
+                <div class="video-card">
+                    <div class="video-thumb"></div>
+                    <div class="video-info"><strong>Groundbreaking: Philly Hub 01</strong><br><small>22 min | Institutional History</small></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb"></div>
+                    <div class="video-info"><strong>Sovereign Energy: The Solar Shift</strong><br><small>15 min | Technical Series</small></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb"></div>
+                    <div class="video-info"><strong>Feeding the Village: Aquaponics</strong><br><small>18 min | Resource Division</small></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb"></div>
+                    <div class="video-info"><strong>The Great Seal: Identity 101</strong><br><small>10 min | New Member Orientation</small></div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="media-row" style="background: #0a0a0a;">
+            <h2 class="row-title">Director Academy Training</h2>
+            <div class="thumbnail-grid">
+                <div class="video-card">
+                    <div class="video-thumb" style="background: var(--fed-blue);"></div>
+                    <div class="video-info"><strong>Crisis Management Protocols</strong><br><small>Advanced Level | Certification Required</small></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb" style="background: var(--fed-blue);"></div>
+                    <div class="video-info"><strong>Community Financial Auditing</strong><br><small>Intermediate | Comptroller Division</small></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb" style="background: var(--fed-blue);"></div>
+                    <div class="video-info"><strong>Urban Agriculture Operations</strong><br><small>Basic | Sustainability Division</small></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb" style="background: var(--fed-blue);"></div>
+                    <div class="video-info"><strong>Logistics & Fleet Security</strong><br><small>Advanced | Fleet Command</small></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="padding: 60px 5%; color: #444; text-align: center; border-top: 1px solid #111;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | SOVEREIGN FILM DIVISION</p>
+        <p style="font-size: 10px;">Documenting the Success. Preserving the Truth.</p>
+    </footer>
+
+</body>
+</html>
