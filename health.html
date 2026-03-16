@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Health | TGSOBAUSA.ORG Wellness Initiative</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --teal-heal: #008080; --soft-gray: #f9fbfb; }
+        body { margin: 0; font-family: "Georgia", serif; background: var(--soft-gray); color: #333; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--teal-heal);
+        }
+        .header-seals img { width: 100px; height: 100px; }
+
+        .health-hero { 
+            background: linear-gradient(rgba(0, 128, 128, 0.8), rgba(0, 128, 128, 0.8)), url('wellness-bg.jpg'); 
+            background-size: cover; color: white; padding: 80px 8%; text-align: center;
+        }
+
+        .initiative-grid { 
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; 
+            max-width: 1200px; margin: 50px auto; padding: 0 20px; 
+        }
+        .health-card { 
+            background: white; border-radius: 8px; padding: 30px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 6px solid var(--teal-heal);
+        }
+        .health-card h3 { color: var(--fed-blue); font-size: 20px; margin-top: 15px; }
+        .health-card p { font-size: 14px; color: #666; line-height: 1.6; }
+        
+        .clinic-schedule { 
+            max-width: 900px; margin: 40px auto; background: white; padding: 40px; border: 1px solid #ddd;
+        }
+        .clinic-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .clinic-table th { background: var(--fed-blue); color: white; padding: 12px; text-align: left; }
+        .clinic-table td { padding: 15px; border-bottom: 1px solid #eee; font-size: 14px; }
+
+        .btn-schedule { 
+            background: var(--teal-heal); color: white; border: none; padding: 15px 30px; 
+            font-weight: bold; cursor: pointer; border-radius: 4px; transition: 0.3s;
+        }
+        .btn-schedule:hover { background: var(--fed-blue); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">HEALTH & WELLNESS DIVISION</h1>
+            <p style="font-size: 11px; color: var(--teal-heal); margin: 0;">Vitality for the Sovereign Community</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="health-hero">
+            <h2 style="font-size: 36px; margin: 0;">THE WEALTH OF HEALTH</h2>
+            <p style="max-width: 800px; margin: 20px auto; font-size: 18px; opacity: 0.9;">
+                The Bureau of National Identity recognizes that physical and mental well-being are essential for community governance and economic success.
+            </p>
+        </section>
+
+        <div class="initiative-grid">
+            <div class="health-card">
+                <div style="font-size: 40px;">🧠</div>
+                <h3>Mental Fortitude</h3>
+                <p>Specialized counseling for post-traumatic community stress and leadership burnout, focusing on the "Helping Hand" psychology.</p>
+            </div>
+            <div class="health-card">
+                <div style="font-size: 40px;">🥗</div>
+                <h3>Nutritional Sovereignty</h3>
+                <p>Urban farming education and direct access to organic resources within the Pillar House networks of Philly and MN.</p>
+            </div>
+            <div class="health-card">
+                <div style="font-size: 40px;">🏃</div>
+                <h3>Physical Readiness</h3>
+                <p>Community-led fitness and self-defense programs designed to ensure every Pillar is physically capable of protecting the village.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="clinic-schedule">
+            <h3 style="color: var(--fed-blue); text-transform: uppercase;">Regional Wellness Schedule</h3>
+            <table class="clinic-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Philly Hub (Pillar 1)</th>
+                        <th>Minneapolis Hub (Pillar 2)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Holistic Health Screening</td>
+                        <td>Mon / Wed (9AM - 2PM)</td>
+                        <td>Tue / Thu (10AM - 3PM)</td>
+                    </tr>
+                    <tr>
+                        <td>Counseling & Mentorship</td>
+                        <td>Daily (By Appointment)</td>
+                        <td>Daily (By Appointment)</td>
+                    </tr>
+                    <tr>
+                        <td>Sovereign Fitness Training</td>
+                        <td>Sat (8AM - 10AM)</td>
+                        <td>Sat (9AM - 11AM)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn-schedule">BOOK A WELLNESS SESSION</button>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #111; color: #eee; padding: 60px 8%; text-align: center;">
+        <p>BUREAU OF NATIONAL IDENTITY | HEALTH & WELLNESS DIVISION</p>
+        <p style="font-size: 11px; opacity: 0.5;">Solutions-Based Accountability for the Body and Mind.</p>
+    </footer>
+
+</body>
+</html>
