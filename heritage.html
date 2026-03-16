@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heritage Vault | TGSOBAUSA.ORG Genealogy</title>
+    <title>Arts & Heritage | TGSOBAUSA.ORG Endowment</title>
     <style>
-        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --sepia: #704214; --linen: #FAF9F6; }
-        body { margin: 0; font-family: "Georgia", serif; background: var(--linen); color: #2c3e50; }
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --canvas-white: #FFFFFF; --gallery-gray: #1a1a1a; }
+        body { margin: 0; font-family: "Optima", sans-serif; background: var(--canvas-white); color: #333; }
         
         header { 
-            background: #fff; padding: 20px 8%; display: flex; 
-            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--sepia);
+            background: #fff; padding: 25px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 1px solid #eee;
         }
-        .header-seals img { width: 90px; height: 90px; }
+        .header-seals img { width: 60px; height: 60px; }
 
         .heritage-hero { 
-            background: linear-gradient(rgba(112, 66, 20, 0.8), rgba(112, 66, 20, 0.8)), url('heritage-bg.jpg'); 
-            background-size: cover; color: white; padding: 80px 8%; text-align: center;
+            padding: 80px 8%; text-align: center; background: #fafafa;
+        }
+        .heritage-hero h2 { font-size: 42px; color: var(--fed-blue); letter-spacing: 3px; text-transform: uppercase; }
+
+        .gallery-grid { 
+            max-width: 1200px; margin: 40px auto; display: grid; 
+            grid-template-columns: repeat(3, 1fr); gap: 15px; padding: 0 20px;
+        }
+        .art-card { 
+            background: #000; height: 350px; position: relative; overflow: hidden; 
+            border: 1px solid #eee; cursor: pointer;
+        }
+        .art-card:hover .overlay { opacity: 1; }
+        .overlay { 
+            position: absolute; bottom: 0; left: 0; right: 0; background: rgba(10, 30, 60, 0.9); 
+            color: white; padding: 20px; opacity: 0; transition: 0.3s;
         }
 
-        .vault-sections { 
-            max-width: 1100px; margin: 50px auto; display: grid; 
-            grid-template-columns: 1fr 1fr; gap: 40px; padding: 0 20px; 
+        .endowment-section { 
+            background: var(--fed-blue); color: white; padding: 60px 8%; display: flex; align-items: center; gap: 50px;
         }
-        .vault-card { 
-            background: white; border: 1px solid #dcdcdc; padding: 40px; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 6px solid var(--gold-leaf);
-        }
-        .vault-card h3 { color: var(--sepia); margin-top: 0; font-variant: small-caps; }
         
-        .dna-registry { 
-            background: var(--fed-blue); color: white; padding: 60px 8%; text-align: center; margin-top: 40px;
-        }
-        .btn-archive { 
+        .btn-grant { 
             background: var(--gold-leaf); color: white; border: none; padding: 15px 40px; 
-            font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 20px;
+            font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px;
         }
     </style>
 </head>
@@ -45,46 +50,60 @@
             <img src="Tgsobabpousa1.png" alt="Seal 1">
         </div>
         <div style="text-align: right;">
-            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">HERITAGE & GENEALOGY</h1>
-            <p style="font-size: 11px; color: var(--sepia); margin: 0;">Tracing the Bloodlines of the Diaspora</p>
+            <h1 style="font-size: 18px; color: var(--fed-blue); margin: 0;">HERITAGE ENDOWMENT</h1>
+            <p style="font-size: 10px; color: var(--gold-leaf); margin: 0;">Preserving the Aesthetic of the Sovereign State</p>
         </div>
     </header>
 
     <main>
         <section class="heritage-hero">
-            <h2 style="font-size: 36px; margin: 0; letter-spacing: 2px;">YOUR HISTORY IS YOUR POWER</h2>
-            <p style="opacity: 0.9; margin-top: 10px;">The Bureau of Records ensures that no family story is lost to time.</p>
+            <h2>The Living Archive</h2>
+            <div style="width: 60px; height: 3px; background: var(--gold-leaf); margin: 20px auto;"></div>
+            <p style="max-width: 700px; margin: 0 auto; font-size: 18px; line-height: 1.6; color: #666;">
+                Investing in the creators, historians, and visionaries who document the success of the Association of Success.
+            </p>
         </section>
 
-        
-
-        <div class="vault-sections">
-            <div class="vault-card">
-                <h3>Oral History Repository</h3>
-                <p style="font-size: 14px; line-height: 1.6;">Upload audio and video recordings of elders in Philadelphia and Minneapolis. These records are encrypted and stored as <strong>"Cultural Assets"</strong> within the Bureau’s permanent archive.</p>
-                <button class="btn-archive" style="background: var(--sepia);">UPLOAD HISTORY</button>
+        <div class="gallery-grid">
+            <div class="art-card">
+                <div class="overlay">
+                    <strong>The Pillar Mural Project</strong><br>
+                    <small>Philadelphia Corridor | District 4</small>
+                </div>
             </div>
-            <div class="vault-card">
-                <h3>The Lineage Registry</h3>
-                <p style="font-size: 14px; line-height: 1.6;">Trace your roots across state lines and oceans. Our research team assists in connecting modern <strong>Sovereign Citizens</strong> to their historical land-owners, craftsmen, and leaders.</p>
-                <button class="btn-archive" style="background: var(--fed-blue);">START SEARCH</button>
+            <div class="art-card">
+                <div class="overlay">
+                    <strong>Sound of the Hub</strong><br>
+                    <small>Minneapolis Recording Residency</small>
+                </div>
+            </div>
+            <div class="art-card">
+                <div class="overlay">
+                    <strong>Oral Histories: The Founders</strong><br>
+                    <small>Digital Archive Series</small>
+                </div>
             </div>
         </div>
 
         
 
-        <section class="dna-registry">
-            <h2 style="color: var(--gold-leaf);">The Biological Identity Shield</h2>
-            <p style="max-width: 750px; margin: 20px auto; font-size: 18px; line-height: 1.6;">
-                By securely linking genetic markers to your <strong>Great Seal Identity</strong>, we provide a scientific anchor for your heritage. This is the ultimate proof of identity, protected by the **Bureau Cyber-Defense** (Page 36).
-            </p>
-            <p style="font-size: 14px; color: #ccc;">*Private. Encrypted. Sovereign.*</p>
+        <section class="endowment-section">
+            <div style="flex: 1;">
+                <h2 style="color: var(--gold-leaf); font-size: 32px;">Creative Sovereignty Grants</h2>
+                <p style="line-height: 1.7; opacity: 0.9;">
+                    The Bureau allocates 2% of the **Sovereign Fund** (Page 32) annually to support local artists who contribute to the "Visual Identity" of our Pillar Houses and Districts. We don't just hang art; we build the creators' future.
+                </p>
+                <button class="btn-grant">Apply for 2026 Residency</button>
+            </div>
+            <div style="flex: 1; border: 5px solid var(--gold-leaf); padding: 10px;">
+                
+            </div>
         </section>
     </main>
 
-    <footer style="background: #111; color: #777; padding: 60px 8%; text-align: center; border-top: 5px solid var(--gold-leaf);">
-        <p>© 2026 BUREAU OF NATIONAL IDENTITY | HERITAGE DIVISION</p>
-        <p style="font-size: 10px;">Restoring the Past to Secure the Future.</p>
+    <footer style="background: var(--gallery-gray); color: #777; padding: 40px; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | CULTURAL AFFAIRS DIVISION</p>
+        <p style="font-size: 10px;">Culture is the shield. History is the sword.</p>
     </footer>
 
 </body>
