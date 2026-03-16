@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Logistics | TGSOBAUSA.ORG Fleet Management</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --diesel-gray: #333; --road-yellow: #f1c40f; }
+        body { margin: 0; font-family: "Helvetica Neue", sans-serif; background: #ececec; color: #333; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 5px solid var(--fed-blue);
+        }
+        .header-seals img { width: 90px; height: 90px; }
+
+        .logistics-hero { 
+            background: var(--fed-blue); color: white; padding: 60px 8%; text-align: left;
+            border-bottom: 5px solid var(--road-yellow);
+        }
+
+        .fleet-stats { 
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; 
+            max-width: 1200px; margin: -30px auto 40px; padding: 0 20px; 
+        }
+        .stat-card { background: white; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 4px; }
+        .stat-val { display: block; font-size: 24px; font-weight: bold; color: var(--fed-blue); }
+        .stat-label { font-size: 11px; text-transform: uppercase; color: #888; margin-top: 5px; }
+
+        .logistics-grid { 
+            display: grid; grid-template-columns: 2fr 1fr; gap: 30px; 
+            max-width: 1200px; margin: 0 auto 60px; padding: 0 20px; 
+        }
+        .map-placeholder { background: #fff; border: 1px solid #ddd; padding: 20px; height: 450px; position: relative; }
+        .dispatch-log { background: #fff; border: 1px solid #ddd; padding: 20px; height: 450px; overflow-y: scroll; }
+
+        .dispatch-item { padding: 15px 0; border-bottom: 1px solid #eee; font-size: 13px; }
+        .status-tag { float: right; font-size: 10px; padding: 3px 8px; border-radius: 10px; color: white; font-weight: bold; }
+
+        .btn-request { background: var(--road-yellow); color: #000; border: none; padding: 15px 30px; font-weight: bold; cursor: pointer; width: 100%; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 22px; color: var(--fed-blue); margin: 0;">LOGISTICS & FLEET</h1>
+            <p style="font-size: 11px; color: var(--gold-leaf); margin: 0;">The Movement of Sovereign Resources</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="logistics-hero">
+            <h2 style="font-size: 32px; margin: 0;">MISSION-CRITICAL MOBILITY</h2>
+            <p style="opacity: 0.8; margin-top: 10px;">Managing the Bureau Fleet across the Philadelphia-to-Minnesota Corridor.</p>
+        </section>
+
+        <div class="fleet-stats">
+            <div class="stat-card"><span class="stat-val">24</span><span class="stat-label">Active Units</span></div>
+            <div class="stat-card"><span class="stat-val">1,402</span><span class="stat-label">Deliveries Complete</span></div>
+            <div class="stat-card"><span class="stat-val">99.8%</span><span class="stat-label">On-Time Rate</span></div>
+            <div class="stat-card"><span class="stat-val">100%</span><span class="stat-label">Verified Drivers</span></div>
+        </div>
+
+        <div class="logistics-grid">
+            <div class="map-placeholder">
+                <h3 style="margin-top: 0; color: var(--fed-blue);">Real-Time Asset Tracking</h3>
+                
+                <p style="font-size: 12px; color: #666; margin-top: 100px;">Visualizing Bureau asset movement in Philadelphia District 1 and Minneapolis District 4.</p>
+            </div>
+
+            <div class="dispatch-log">
+                <h3 style="margin-top: 0; color: var(--fed-blue);">Live Dispatch Feed</h3>
+                <div class="dispatch-item">
+                    <span class="status-tag" style="background: #27ae60;">IN ROUTE</span>
+                    <strong>Unit 04: Food Resource</strong><br>
+                    Destination: North Philly Pillar House<br>
+                    <small>ETA: 14:20 EST</small>
+                </div>
+                <div class="dispatch-item">
+                    <span class="status-tag" style="background: #2980b9;">COMPLETED</span>
+                    <strong>Unit 09: Youth Transport</strong><br>
+                    Mission: Academy Field Training<br>
+                    <small>Status: Returned to Hub</small>
+                </div>
+                <div class="dispatch-item">
+                    <span class="status-tag" style="background: #f39c12;">STAGING</span>
+                    <strong>Unit 12: Construction Supply</strong><br>
+                    Cargo: Timber / Solar Modules (Phase III)<br>
+                    <small>Departure: 16:00 EST</small>
+                </div>
+                
+                
+                
+                <button class="btn-request">REQUEST LOGISTICS SUPPORT</button>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #111; color: #777; padding: 40px; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | LOGISTICS DIVISION</p>
+        <p style="font-size: 10px;">Ensuring the Physical Momentum of the Association of Success.</p>
+    </footer>
+
+</body>
+</html>
