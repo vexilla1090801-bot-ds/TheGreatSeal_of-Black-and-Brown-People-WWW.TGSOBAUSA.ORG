@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Library | TGSOBAUSA.ORG Research Vault</title>
+    <style>
+        :root { --fed-blue: #0A1E3C; --gold-leaf: #B8860B; --lib-crimson: #7B1113; --paper-white: #F4F1EA; }
+        body { margin: 0; font-family: "Palatino", serif; background: var(--paper-white); color: #2c3e50; }
+        
+        header { 
+            background: #fff; padding: 20px 8%; display: flex; 
+            justify-content: space-between; align-items: center; border-bottom: 4px solid var(--lib-crimson);
+        }
+        .header-seals img { width: 90px; height: 90px; }
+
+        .library-hero { 
+            background: var(--lib-crimson); color: white; padding: 60px 8%; text-align: center;
+        }
+
+        .search-bar { 
+            max-width: 800px; margin: -30px auto 40px; background: white; 
+            padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: flex;
+        }
+        .search-bar input { flex: 1; padding: 15px; border: 1px solid #ddd; font-size: 16px; }
+        .btn-search { background: var(--gold-leaf); color: white; border: none; padding: 0 30px; cursor: pointer; font-weight: bold; }
+
+        .archive-grid { 
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; 
+            max-width: 1200px; margin: 0 auto 60px; padding: 0 20px; 
+        }
+        .archive-folder { 
+            background: white; border: 1px solid #dcdcdc; padding: 25px; 
+            border-top: 5px solid var(--fed-blue); transition: 0.3s;
+        }
+        .archive-folder:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .archive-folder h3 { color: var(--lib-crimson); margin-top: 0; font-size: 18px; }
+        .doc-count { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+
+        .featured-research { 
+            max-width: 1000px; margin: 60px auto; background: white; padding: 40px; border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-seals">
+            <img src="Tgsobabpousa1.png" alt="Seal 1">
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size: 20px; color: var(--fed-blue); margin: 0;">RESEARCH & INTELLIGENCE</h1>
+            <p style="font-size: 11px; color: var(--lib-crimson); margin: 0;">Institutional Memory of the Association of Success</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="library-hero">
+            <h2 style="font-size: 32px; margin: 0; letter-spacing: 1px;">THE SOVEREIGN ARCHIVE</h2>
+            <p style="opacity: 0.9; margin-top: 10px;">Documenting the Blueprints for Community Restoration.</p>
+        </section>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search Playbooks, Research Papers, or Case Studies...">
+            <button class="btn-search">SEARCH VAULT</button>
+        </div>
+
+        <div class="archive-grid">
+            <div class="archive-folder">
+                <span class="doc-count">42 Documents</span>
+                <h3>Urban Agriculture Playbooks</h3>
+                <p style="font-size: 13px;">Technical guides on setting up high-yield indoor farms in Philadelphia industrial zones.</p>
+            </div>
+            <div class="archive-folder">
+                <span class="doc-count">18 Case Studies</span>
+                <h3>Target 20 Expansion Data</h3>
+                <p style="font-size: 13px;">Socio-economic analysis of the Minneapolis corridor and projected impact for 2027.</p>
+            </div>
+            <div class="archive-folder">
+                <span class="doc-count">105 Files</span>
+                <h3>Legal & Grant Repository</h3>
+                <p style="font-size: 13px;">Verified templates for federal grant procurement and Bureau legal filings.</p>
+            </div>
+        </div>
+
+        <div class="featured-research">
+            <h2 style="color: var(--fed-blue);">Featured Intelligence</h2>
+            <hr>
+            <div style="display: flex; gap: 30px; align-items: center; margin-top: 20px;">
+                <div style="flex: 2;">
+                    <h3>"The Economics of the Helping Hand" (2026)</h3>
+                    <p>A comprehensive research paper detailing how circulating capital within <strong>Certified Bureau Vendors</strong> (Page 24) increases neighborhood property values by 14% annually.</p>
+                    <a href="#" style="color: var(--lib-crimson); font-weight: bold; text-decoration: none;">Download Full PDF →</a>
+                </div>
+                <div style="flex: 1;">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #1a1a1a; color: #888; padding: 40px; text-align: center;">
+        <p>© 2026 BUREAU OF NATIONAL IDENTITY | RESEARCH DIVISION</p>
+        <p style="font-size: 10px;">Knowledge is the Foundation of Sovereignty.</p>
+    </footer>
+
+</body>
+</html>
